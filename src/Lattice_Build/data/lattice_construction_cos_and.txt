@@ -1,0 +1,76 @@
+cos_neg
+	(= (|_cos#0| (- x)) (|_cos#0| x))
+neg_cos
+	(= (|_cos#0| (+ x pi)) (- (|_cos#0| x)))
+cos_gt_0
+	(and (and (< (- (/ pi 2)) x) (< x (/ pi 2))) (< 0 (|_cos#0| x)))
+cos_ge_0
+	(and (and (<= (- (/ pi 2)) x) (<= x (/ pi 2))) (<= 0 (|_cos#0| x)))
+cos_le_0
+	(and (and (<= (/ pi 2) x) (<= x (* 3 (/ pi 2)))) (<= (|_cos#0| x) 0))
+cos_lt_0
+	(and (and (< (/ pi 2) x) (< x (* 3 (/ pi 2)))) (< (|_cos#0| x) 0))
+cos_ge_0_3PI2
+	(and (and (<= (* 3 (/ pi 2)) x) (<= x (* 2 pi))) (<= 0 (|_cos#0| x)))
+cos_eq_0_2PI_0
+	(and (and (and (<= 0 x) (<= x (* 2 pi))) (= 0 (|_cos#0| x))) (or (= (/ pi 2) x) (= x (* 3 (/ pi 2)))))
+cos_eq_0_2PI_1
+	(and (and (and (<= 0 x) (<= x (* 2 pi))) (or (= (/ pi 2) x) (= x (* 3 (/ pi 2))))) (= 0 (|_cos#0| x)))
+cos_period
+	(= (|_cos#0| (+ x  (* (* 2 pi) k))) (|_cos#0| x))
+cos_eq_0_0
+	(and (= 0 (|_cos#0| x)) (= x (+ (* pi k) (/ pi 2))))
+cos_eq_0_1
+	(and (= x (+ (* pi k) (/ pi 2))) (= 0 (|_cos#0| x)))
+cos_2x
+	(= (|_cos#0| (* 2 x)) (- (* (|_cos#0| x) (|_cos#0| x)) (* (sin x) (sin x))))
+cos_3x
+	(= (|_cos#0| (* 3 x)) (- (* 4 (* (|_cos#0| x) (* (|_cos#0| x) (|_cos#0| x)))) (* 3 (|_cos#0| x))))
+cos_sin2_cos2
+	(= 1 (+ (* (|_cos#0| x) (|_cos#0| x)) (* (sin x) (sin x))))
+cos_2sin_shq
+	(= (|_cos#0| x) (sin (+ x (/ pi 2))))
+cos_sin_2a
+	(= (sin (* 2 x)) (* 2 (* (sin x) (|_cos#0| x))))
+cos_2a
+	(= (|_cos#0| (* 2 x)) (- (* (|_cos#0| x) (|_cos#0| x)) (* (sin x) (sin x))))
+cos_2a_cos
+	(= (|_cos#0| (* 2 x)) (- (* 2 (* (|_cos#0| x) (|_cos#0| x))) 1))
+cos_2a_sin
+	(= (|_cos#0| x) (- 1 (* 2 (* (sin (/ x 2)) (sin (/ x 2))))))
+cos_bound
+	(and (<= (- 1) (|_cos#0| x)) (<= (|_cos#0| x) 1))
+cos_sin_shift
+	(= (|_cos#0| x) (sin (- (/ pi 2) x)))
+cos_sin
+	(= (|_cos#0| x) (sin (+ (/ pi 2) x)))
+cos_form1
+	(= (+ (|_cos#0| x) (|_cos#0| y)) (* 2  (* (|_cos#0| (/ (- x y) 2)) (|_cos#0| (/ (+ x y) 2)))))
+cos_form2
+	(= (- (|_cos#0| x) (|_cos#0| y)) (- (* 2  (* (sin (/ (- x y) 2)) (sin (/ (+ x y) 2))))))
+cos_increasing_0
+	(and (and (and (<= pi x) (<= x (* 2 pi))) (and (<= pi y) (<= y (* 2 pi)))) (and (and (< (|_cos#0| x) (|_cos#0| y)) (< x y)) (and (< (|_cos#0| y) (|_cos#0| x)) (< y x))))
+cos_increasing_1
+	(and (and (and (<= pi x) (<= x (* 2 pi))) (and (<= pi y) (<= y (* 2 pi)))) (and (or (not (< x y)) (< (|_cos#0| x) (|_cos#0| y))) (or (not (< y x)) (< (|_cos#0| y) (|_cos#0| x)))))
+cos_decreasing_0
+	(and (and (and (<= 0 x) (<= x pi)) (and (<= 0 y) (<= y pi))) (and (or (not (< (|_cos#0| x) (|_cos#0| y))) (< y x)) (or (not (< (|_cos#0| y) (|_cos#0| x))) (< x y))))
+cos_decreasing_1
+	(and (and (and (<= 0 x) (<= x pi)) (and (<= 0 y) (<= y pi))) (and (or (not (< x y)) (< (|_cos#0| y) (|_cos#0| x))) (or (not (< y x)) (< (|_cos#0| x) (|_cos#0| y)))))
+cos_incr_0
+	(and (and (and (<= pi x) (<= x (* 2 pi))) (and (<= pi y) (<= y (* 2 pi)))) (and (or (not (<= (|_cos#0| x) (|_cos#0| y))) (<= x y)) (or (not (<= (|_cos#0| y) (|_cos#0| x))) (<= y x))))
+cos_incr_1
+	(and (and (and (<= pi x) (<= x (* 2 pi))) (and (<= pi y) (<= y (* 2 pi)))) (and (or (not (<= x y)) (<= (|_cos#0| x) (|_cos#0| y))) (or (not (<= y x)) (<= (|_cos#0| y) (|_cos#0| x)))))
+cos_decr_0
+	(and (and (and (<= 0 x) (<= x pi)) (and (<= 0 y) (<= y pi))) (and (or (not (<= (|_cos#0| x) (|_cos#0| y))) (<= y x)) (or (not (<= (|_cos#0| y) (|_cos#0| x))) (<= x y))))
+cos_decr_1
+	(and (and (and (<= 0 x) (<= x pi)) (and (<= 0 y) (<= y pi))) (and (or (not (<= x y)) (<= (|_cos#0| y) (|_cos#0| x))) (or (not (<= y x)) (<= (|_cos#0| x) (|_cos#0| y)))))
+cos_sin_plus
+	(and (= (sin (+ x y)) (+ (* (sin x) (|_cos#0| y)) (* (|_cos#0| x) (sin y)))) (and (= (* (sin x) (|_cos#0| y)) (* (|_cos#0| y) (sin x))) (= (* (|_cos#0| x) (sin y)) (* (sin y) (|_cos#0| x)))))
+cos_sin_minus
+	(and (= (sin (- x y)) (- (* (sin x) (|_cos#0| y)) (* (|_cos#0| x) (sin y)))) (and (= (* (sin x) (|_cos#0| y)) (* (|_cos#0| y) (sin x))) (= (* (|_cos#0| x) (sin y)) (* (sin y) (|_cos#0| x)))))
+cos_minus
+	(and (= (|_cos#0| (- x y)) (+ (* (|_cos#0| x) (|_cos#0| y)) (* (sin x) (sin y)))) (and (= (* (|_cos#0| x) (|_cos#0| y)) (* (|_cos#0| y) (|_cos#0| x))) (= (* (sin x) (sin y)) (* (sin y) (sin x)))))
+cos_plus
+	(and (= (|_cos#0| (+ x y)) (- (* (|_cos#0| x) (|_cos#0| y)) (* (sin x) (sin y)))) (and (= (* (|_cos#0| x) (|_cos#0| y)) (* (|_cos#0| y) (|_cos#0| x))) (= (* (sin x) (sin y)) (* (sin y) (sin x)))))
+cos_sin_bound_1
+	(and (and (< 0 x) (< x 1)) (and (< 0 (* x (|_cos#0| x))) (and (< (* x (|_cos#0| x)) (sin x)) (< (sin x) x))))

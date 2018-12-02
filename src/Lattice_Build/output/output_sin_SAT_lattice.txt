@@ -1,0 +1,60 @@
+ neg_sin 	
+sin_2cos_shq 	
+sin_3x 	
+sin_bound 	
+sin_cos_2a 	
+sin_cos_2a_sin 	
+sin_cos_bound_1 	
+sin_cos_minus 	
+sin_cos_plus 	
+sin_cos_shift 	
+sin_cos_shift_wiki1 	
+sin_cos_shift_wiki2 	
+sin_decr_0 	
+sin_decr_1 	
+sin_decreasing_0 	
+sin_decreasing_1 	
+sin_def 	
+sin_eq_0_0 	
+sin_eq_0_1 	
+sin_eq_O_2PI_0 	
+sin_eq_O_2PI_1 	
+sin_form3 	
+sin_form4 	
+sin_ge_0 	
+sin_gt_0 	
+sin_incr_0 	
+sin_incr_1 	
+sin_increasing_0 	
+sin_increasing_1 	
+sin_le_0 	
+sin_lt_0 	
+sin_lt_0_var 	
+sin_minus 	
+sin_neg 	
+sin_period 	
+sin_PI_x 	
+sin_plus 	
+sin_pos_tech 	
+sin_sin_2a 	
+sin_sin2_cos2_1 	
+sin_cos_2a_sin 	sin_cos_plus
+sin_cos_2a 	sin_cos_plus
+sin_sin_2a 	sin_cos_plus
+sin_form3 	sin_minus
+sin_form4 	sin_minus
+sin_3x 	sin_plus
+sin_cos_2a_sin 	sin_cos_minus
+sin_cos_2a 	sin_cos_minus
+sin_sin_2a 	sin_cos_minus
+sin_form3 	sin_plus
+sin_form4 	sin_plus
+sin_3x 	sin_sin_2a
+sin_cos_2a_sin 	sin_minus
+sin_cos_2a 	sin_minus
+sin_sin_2a 	sin_minus
+sin_3x 	sin_cos_2a
+sin_cos_2a_sin 	sin_plus
+sin_cos_2a 	sin_plus
+sin_sin_2a 	sin_plus
+sin_3x 	sin_sin2_cos2_1
