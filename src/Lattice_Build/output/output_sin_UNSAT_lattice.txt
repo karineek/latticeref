@@ -1,2 +1,3 @@
 neg_sin	sin_2cos_shq	sin_3x	sin_bound	sin_cos_2a	sin_cos_2a_sin	sin_cos_bound_1	
 neg_sin	sin_2cos_shq	sin_3x	sin_bound	sin_cos_2a	sin_cos_2a_sin	sin_cos_minus	
+neg_sin	sin_2cos_shq	sin_3x	sin_bound	sin_cos_2a	sin_cos_2a_sin	sin_cos_plus	sin_cos_shift	sin_cos_shift_wiki1	sin_cos_shift_wiki2	sin_decr_0	

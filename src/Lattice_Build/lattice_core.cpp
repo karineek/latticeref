@@ -183,8 +183,9 @@ bool lattice_core::is_sat(std::set<std::string>* curr_set)
     /* r is unknown: continue and try with mathsat5 */
     
     /***************  MathSAT5  *******************/
-    std::string mathsat_query = m_facts_container->get_decl_str() + 
-                "   (and (= (g_cos x) (sin (+ (/ pi 2) x)))\n" + query + ")\n";
+    std::string mathsat_query = 
+                "(and \n  " + m_facts_container->get_decl_str() + 
+                "  (and (= (g_cos x) (sin (+ (/ pi 2) x)))\n  " + query + "))\n";
 
     /* Same for mathsat5 */
     size_t index = 0;
