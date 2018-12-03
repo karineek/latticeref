@@ -10,6 +10,8 @@
 //    output an smt file with all the facts as query (false flag)
 // 
 // Input init search: facts_decl.txt lattice_construction_cos.txt lattice_construction_cos_and.txt
+// ./dist/Debug/GNU-Linux/lattice_build data/facts_decl.txt data/lattice_construction_sin.txt data/lattice_construction_sin_and.txt output/output_sin output/output_sin_SAT_lattice.txt output/output_sin_UNSAT_lattice.txt 
+//
 int main(int argc, const char **argv)
 {
     if (argc <=1) {

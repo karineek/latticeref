@@ -59,3 +59,8 @@ cos_2a_sin	cos_plus
 cos_2a_cos	cos_plus
 cos_2a	cos_plus
 cos_sin_2a	cos_plus
+cos_period 	cos_neg
+cos_period 	neg_cos
+cos_period 	cos_eq_0_0
+cos_period 	cos_eq_0_1
+

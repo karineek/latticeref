@@ -64,49 +64,130 @@ bool lattice_core::is_sat(std::set<std::string>* curr_set)
     
     /***************  Z3  *******************/
     std::string assert_str = "\n (assert ";
-    std::string z3_query =  "(declare-fun x () Real)\n(declare-fun y () Real)\n(declare-fun z () Real)\n(declare-fun r () Real)\n(declare-fun k () Int)"
+    
+    /* Try with z3 */
+    {
+        std::string z3_query_1 =  "(declare-fun x () Real)\n(declare-fun y () Real)\n(declare-fun z () Real)\n(declare-fun r () Real)\n(declare-fun k () Int)"
                 + assert_str + m_facts_container->get_decl_str() + ")" 
                 + assert_str + query + ")\n(check-sat-using qfnra-nlsat)";
    
-    /* Replace |cos#0| in cos for z3++ */
-    size_t index = 0;
-    while (true) {
-         /* Locate the substring to replace. */
-         index = z3_query.find("|_cos#0|", index);
-         if (index == std::string::npos) break;
+        /* Replace |cos#0| in cos for z3++ */
+        size_t index = 0;
+        while (true) {
+             /* Locate the substring to replace. */
+             index = z3_query_1.find("|_cos#0|", index);
+             if (index == std::string::npos) break;
 
-         /* Make the replacement.  "|_cos#0|" */
-         z3_query.replace(index, 8,   "cos     ");
+             /* Make the replacement.  "|_cos#0|" */
+             z3_query_1.replace(index, 8,   "cos     ");
 
-         /* Advance index forward so the next iteration doesn't pick it up as well. */
-         index += 8;
-    }
+             /* Advance index forward so the next iteration doesn't pick it up as well. */
+             index += 8;
+        }
     
-    /* Try with z3 */
-    z3::context query_context;
-    Z3_ast parsed = Z3_parse_smtlib2_string(query_context,z3_query.c_str(),0,0,0,0,0,0);
-    z3::expr e(query_context, parsed);
-    z3::solver s(query_context);
-    s.add(e);
-    Z3_error_code error = query_context.check_error();
-    if (error != Z3_OK)
-    {
-        std::cout << ">> ERROR:  Z3 query context error, exit" << std::endl;
-        exit(0);
+        z3::context query_context_1;
+        Z3_ast parsed_1 = Z3_parse_smtlib2_string(query_context_1,z3_query_1.c_str(),0,0,0,0,0,0);
+        z3::expr e_1(query_context_1, parsed_1);
+        z3::solver s_1(query_context_1);
+        s_1.add(e_1);
+        Z3_error_code error_1 = query_context_1.check_error();
+        if (error_1 != Z3_OK)
+        {
+            std::cout << ">> ERROR:  Z3 query context error, exit" << std::endl;
+            exit(0);
+        }    
+        z3::check_result r_1 = s_1.check();
+        if (r_1 == z3::sat) return true;
+        if (r_1 == z3::unsat) return false;
     }
-    z3::check_result r = s.check();
-    if (r == z3::sat) return true;
-    if (r == z3::unsat) return false;
    
+    /* Try with k=1 to hit SAT */
+    {
+        std::string z3_query_2 =  "(declare-fun x () Real)\n(declare-fun y () Real)\n(declare-fun z () Real)\n(declare-fun r () Real)\n(declare-fun k () Int)"
+                    + assert_str +  "(= k 1))\n" 
+                    + assert_str + query + ")\n(check-sat-using qfnra-nlsat)";
+        
+        /* Replace |cos#0| in cos for z3++ */
+        size_t index = 0;
+        while (true) {
+             /* Locate the substring to replace. */
+             index = z3_query_2.find("|_cos#0|", index);
+             if (index == std::string::npos) break;
+
+             /* Make the replacement.  "|_cos#0|" */
+             z3_query_2.replace(index, 8,   "cos     ");
+
+             /* Advance index forward so the next iteration doesn't pick it up as well. */
+             index += 8;
+        }
+        
+        z3::context query_context_2;
+        Z3_ast parsed_2 = Z3_parse_smtlib2_string(query_context_2,z3_query_2.c_str(),0,0,0,0,0,0);
+        z3::expr e_2(query_context_2, parsed_2);
+        z3::solver s_2(query_context_2);
+        s_2.add(e_2);
+        Z3_error_code error_2 = query_context_2.check_error();
+        if (error_2 != Z3_OK)
+        {
+            std::cout << ">> ERROR:  Z3 query context error, exit" << std::endl;
+            exit(0);
+        }    
+        z3::check_result r_2 = s_2.check();
+        if (r_2 == z3::sat) return true;
+    }
+    /* Is with a specific value, only valid for SAT*/
+    
+    
+    /* Try with k=1, x=0 to hit SAT */
+    {
+        std::string z3_query_3 =  "(declare-fun x () Real)\n(declare-fun y () Real)\n(declare-fun z () Real)\n(declare-fun r () Real)\n(declare-fun k () Int)"
+                    + assert_str +  "(and (= k 1) (= x 0)))\n" 
+                    + assert_str + query + ")\n(check-sat-using qfnra-nlsat)";
+        
+        /* Replace |cos#0| in cos for z3++ */
+        size_t index = 0;
+        while (true) {
+             /* Locate the substring to replace. */
+             index = z3_query_3.find("|_cos#0|", index);
+             if (index == std::string::npos) break;
+
+             /* Make the replacement.  "|_cos#0|" */
+             z3_query_3.replace(index, 8,   "cos     ");
+
+             /* Advance index forward so the next iteration doesn't pick it up as well. */
+             index += 8;
+        }
+        
+        z3::context query_context_3;
+        Z3_ast parsed_3 = Z3_parse_smtlib2_string(query_context_3,z3_query_3.c_str(),0,0,0,0,0,0);
+        z3::expr e_3(query_context_3, parsed_3);
+        z3::solver s_3(query_context_3);
+        s_3.add(e_3);
+        Z3_error_code error_3 = query_context_3.check_error();
+        if (error_3 != Z3_OK)
+        {
+            std::cout << ">> ERROR:  Z3 query context error, exit" << std::endl;
+            exit(0);
+        }    
+        z3::check_result r_3 = s_3.check();
+        std::cout << "r_3 " << r_3 << std::endl;
+        
+                
+        std::cout << ";; Test the query \n";
+        std::cout << z3_query_3 << std::endl;
+        if (r_3 == z3::sat) return true;
+    }
+    /* Is with a specific value, only valid for SAT*/
+    
+    
     /* r is unknown: continue and try with mathsat5 */
- 
     
     /***************  MathSAT5  *******************/
     std::string mathsat_query = m_facts_container->get_decl_str() + 
                 "   (and (= (g_cos x) (sin (+ (/ pi 2) x)))\n" + query + ")\n";
 
     /* Same for mathsat5 */
-    index = 0;
+    size_t index = 0;
     while (true) {
          /* Locate the substring to replace. */
          index = mathsat_query.find("|_cos#0|", index);
@@ -118,6 +199,9 @@ bool lattice_core::is_sat(std::set<std::string>* curr_set)
          /* Advance index forward so the next iteration doesn't pick it up as well. */
          index += 8;
     }
+    
+    std::cout << ";; Test the query mathsat_query \n";
+    std::cout << mathsat_query << std::endl;
     
     /* Create the solver - mathsat 5*/
     msat_config cfg = msat_create_config();
@@ -174,10 +258,19 @@ void lattice_core::write2log(std::set<std::string>* curr_set, std::string name)
 }
 
 bool lattice_core::is_set_coexist(std::set<std::string>* curr_set) 
-{   
+{
+    // Print the set
+    std::cout << ";; Checking subset: ";
+    for(std::set<std::string>::iterator it = curr_set->begin(); it != curr_set->end(); ++it) {
+        std::cout << (*it) << ",";
+    } 
+    std::cout << std::endl;
+    
     // First check the cache
     if (m_facts_container->is_prev_SAT_and_facts(curr_set)) return true;
     if (m_facts_container->is_prev_UNSAT_and_facts(curr_set)) return false;
+    
+    std::cout << ";; Checking Via SAT solver!" << std::endl;
     
     // We need to test against a SAT solver
     std::mutex m;
@@ -194,8 +287,9 @@ bool lattice_core::is_set_coexist(std::set<std::string>* curr_set)
     
     {
         std::unique_lock<std::mutex> l(m);
-        if(cv.wait_for(l, 3000s) == std::cv_status::timeout) {
+        if(cv.wait_for(l, 500s) == std::cv_status::timeout) {
             // Add to UNSAT list, and exit
+            std::cout << ";; Timout - Add to UNSAT set\n";
             write2log(curr_set, m_base_name+"_UNSAT_lattice.txt");
             throw std::runtime_error("Timeout");
         }
@@ -207,6 +301,7 @@ bool lattice_core::is_set_coexist(std::set<std::string>* curr_set)
     else write2log(curr_set, m_base_name+"_SAT_lattice.txt");
         
     // Return value
+    std::cout << ";; retValue " << retValue << std::endl;
     return retValue;
 }
 

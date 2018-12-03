@@ -58,4 +58,8 @@ sin_cos_2a_sin 	sin_plus
 sin_cos_2a 	sin_plus
 sin_sin_2a 	sin_plus
 sin_3x 	sin_sin2_cos2_1
-
+sin_period 	sin_neg
+sin_period 	neg_sin
+sin_period 	sin_eq_0_1
+sin_period 	sin_eq_0_0
+neg_sin 	sin_eq_0_1
