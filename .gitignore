@@ -1,0 +1,46 @@
+.gitignore~
+
+# Mac OS file
+.DS_store
+
+# CLion related folder
+.idea
+cmake-build-debug
+cmake-build-release
+cmake-build-relwithdebinfo
+
+# /
+/*.d
+/*.o
+/*.swp
+/*.c~
+/*.h~
+/*.txt~
+
+# src/Lattice_Build/dist/Debug/GNU-Linux/
+src/Lattice_Build/dist/Debug/GNU-Linux/*.d
+src/Lattice_Build/dist/Debug/GNU-Linux/*.o
+src/Lattice_Build/dist/Debug/GNU-Linux/*.a
+src/Lattice_Build/dist/Debug/GNU-Linux/*.so
+src/Lattice_Build/dist/Debug/GNU-Linux/lattice_build
+
+# src/Lattice_Build/build/Debug/GNU-Linux/
+src/Lattice_Build/build/Debug/GNU-Linux/*.d
+src/Lattice_Build/build/Debug/GNU-Linux/*.o
+src/Lattice_Build/build/Debug/GNU-Linux/*.a
+src/Lattice_Build/build/Debug/GNU-Linux/*.so
+src/Lattice_Build/build/Debug/GNU-Linux/lattice_build
+
+# src/Lattice_Build/dist/Release/GNU-Linux/
+src/Lattice_Build/dist/Release/GNU-Linux/*.d
+src/Lattice_Build/dist/Release/GNU-Linux/*.o
+src/Lattice_Build/dist/Release/GNU-Linux/*.a
+src/Lattice_Build/dist/Release/GNU-Linux/*.so
+src/Lattice_Build/dist/Release/GNU-Linux/lattice_build
+
+# src/Lattice_Build/build/Release/GNU-Linux/
+src/Lattice_Build/build/Release/GNU-Linux/*.d
+src/Lattice_Build/build/Release/GNU-Linux/*.o
+src/Lattice_Build/build/Release/GNU-Linux/*.a
+src/Lattice_Build/build/Release/GNU-Linux/*.so
+src/Lattice_Build/build/Release/GNU-Linux/lattice_build
