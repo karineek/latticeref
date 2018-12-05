@@ -1,10 +1,8 @@
 #ifndef READ_FACT_FILES_H
 #define READ_FACT_FILES_H
 
-#include <iostream>
-#include <list>
-#include <map>
 #include <vector>
+#include <map>
 #include <set>
 #include <string>
 #include <utility>
@@ -43,13 +41,26 @@ public:
     // Load previous results - co-exists to facts_sat_sets
     void load_co_exists_list(std::string filename);
     void load_none_co_exists_list(std::string filename);
+    void load_implication_list(std::string filename);
+    void load_no_implication_list(std::string filename);
     
     // Check if prev. SAT AND
     bool is_prev_SAT_and_facts(set<std::string>* set2check);
     
     // Check if prev. UNSAT AND
     bool is_prev_UNSAT_and_facts(std::set<std::string> *set2check);
+    
+    // Check if there is a prev. implication found
+    bool is_prev_implication(std::string a, std::set<std::string>* b);
+    void add_prev_implication(std::string a, std::set<std::string>* b)
+    { facts_implication_sets.insert(make_pair(a, *b)); }
+
+    // Check if there is a prev. no-implication found
+    bool is_prev_no_implication(std::string a, std::set<std::string>* b);
+    void add_prev_no_implication(std::string a, std::set<std::string>* b)
+    { facts_no_implication_sets.insert(make_pair(a, *b)); }
   
+    std::set<std::set<std::string>> facts_sat_sets; // SAT
 private:
     std::string str_decls="";
     std::vector<std::string> decls; // All stages
@@ -59,9 +70,11 @@ private:
     
     std::string original_header_function;
     
-    std::set<std::set<std::string>> facts_sat_sets;
+    std::set<std::set<std::string>> facts_sat_sets_unsat; // UNSAT + UNKNOWN
     
-    std::set<std::set<std::string>> facts_sat_sets_unsat;
+    std::set<std::pair<std::string, std::set<std::string>>> facts_implication_sets; // UNSAT
+    
+    std::set<std::pair<std::string, std::set<std::string>>> facts_no_implication_sets; // SAT + UNKNOWN
     
     // Private methods:
     bool load(std::string facts_file_name, bool is_and=false);

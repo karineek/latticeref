@@ -76,6 +76,13 @@ int main(int argc, const char **argv)
         // For optimization do not restore the set, as it has been checked with the call above
     }
 
+    // Shrink graph
+    core->checkShrinkLattice();
+    
+    // Write Graph
+    
+    
+    
     // Clear the memory
     delete facts_subsets_writer;
     delete core;

@@ -207,3 +207,104 @@ bool read_fact_filest::is_prev_UNSAT_and_facts(std::set<std::string> *set2check)
 
     return false;
 }
+
+////////// IMPLICATION CODE !
+// Load previous results - co-exists to facts_sat_sets
+
+void read_fact_filest::load_implication_list(std::string filename)    
+{
+    std::cout << ";; Loading prev-results: " << filename << std::endl;
+    
+    /* Reads Declarations of SMT file */
+    std::ifstream input_prev(filename);
+    if (!input_prev.is_open())
+    {
+        std::cout << "Cannot find the facts's prev. state file: " << filename << std::endl;
+        std::cout << "** SKIP PREV. STATE LOADING... **" << std::endl;
+        return;
+    }
+    
+    std::string line;
+    while(std::getline(input_prev, line))
+    {
+        std::istringstream iss(line);
+        std::string token;
+        std::set<std::string> subset;
+        std::string fact;
+        bool first=true;
+        while(std::getline(iss, token, '\t'))  // but we can specify a different one
+        {
+            token.erase(std::remove(token.begin(), token.end(), '\t'), token.end());
+            token.erase(std::remove(token.begin(), token.end(), ' '), token.end());
+            if (first)
+                fact=token;
+            else
+                subset.insert(token);
+        }
+        facts_implication_sets.insert(make_pair(fact, subset));
+    }
+    input_prev.close();
+}
+
+bool read_fact_filest::is_prev_implication(std::string a, std::set<std::string>* b)
+{
+    if (facts_implication_sets.empty()) return false;
+
+    // Else check manually
+    for(auto it = facts_implication_sets.begin(); it != facts_implication_sets.end(); ++it) {
+        if (it->first == a) {
+            if (set_compare(it->second,*b)) return true;
+        }
+    }
+
+    return false;
+}
+
+void read_fact_filest::load_no_implication_list(std::string filename)    
+{
+    std::cout << ";; Loading prev-results: " << filename << std::endl;
+    
+    /* Reads Declarations of SMT file */
+    std::ifstream input_prev(filename);
+    if (!input_prev.is_open())
+    {
+        std::cout << "Cannot find the facts's prev. state file: " << filename << std::endl;
+        std::cout << "** SKIP PREV. STATE LOADING... **" << std::endl;
+        return;
+    }
+    
+    std::string line;
+    while(std::getline(input_prev, line))
+    {
+        std::istringstream iss(line);
+        std::string token;
+        std::set<std::string> subset;
+        std::string fact;
+        bool first=true;
+        while(std::getline(iss, token, '\t'))  // but we can specify a different one
+        {
+            token.erase(std::remove(token.begin(), token.end(), '\t'), token.end());
+            token.erase(std::remove(token.begin(), token.end(), ' '), token.end());
+            if (first)
+                fact=token;
+            else
+                subset.insert(token);
+        }
+        facts_no_implication_sets.insert(make_pair(fact, subset));
+    }
+    input_prev.close();
+}
+
+bool read_fact_filest::is_prev_no_implication(std::string a, std::set<std::string>* b)
+{
+    if (facts_no_implication_sets.empty()) return false;
+
+    // Else check manually
+    for(auto it = facts_no_implication_sets.begin(); it != facts_no_implication_sets.end(); ++it) {
+        if (it->first == a) {
+            if (set_compare(it->second,*b)) return true;
+        }
+    }
+
+    return false;
+}
