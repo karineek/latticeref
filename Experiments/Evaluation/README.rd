@@ -1,4 +1,5 @@
 For Evaluation of Trigonometric Function with Multiple Meet-semilattices:
+-------------------------------------------------------------------------
 
 Z3 installation part:
 1. unzip into a new folder z3 version 4.7.1: https://github.com/Z3Prover/z3/releases/tag/z3-4.7.1 (sorry I couldn't sent it the file is big).
@@ -13,13 +14,13 @@ sudo make install
 
 HiFrog build part:
 3. git pull latticeref-v2-trigo
-4. Build latticeref-v2-trigo: cd hifrog/trunk/cprover; mkdir build; cd build; cmake ../ -DUSE_Z3=ON -DCMAKE_BUILD_TYPE=Release; make
+4. Build latticeref-v2-trigo: cd hifrog/trunk/cprover; mkdir build; cd build; cmake ../ -DUSE_Z3=ON -DCMAKE_BUILD_TYPE=Release; make hifrog
 
 You shall check if the cmake found the z3 lib, it print this:
 Located z3 version: 4.7.1.0
 
 Experiments part:
-6. Unzip into a new folder trigonometric_ex_HiFrog_Simple.zip
+6. Copy into the directory the benchmarks data
 
 7. Copy into this folder the executable of hifrog and cbmc from the build directory of the version you pulled earlier (and compiled).
 
