@@ -1,0 +1,3 @@
+c_out/ver_succ.c_out,Benchmarks/TACAS17_ex/sin_cos.c,qflra,--claim,1,--no-error-trace,--load-summaries,Benchmarks/TACAS17_ex/__summaries_sin_cos
+c_out/ver_succ.c_out,Benchmarks/TACAS17_ex/sin_cos.c,qflia,--claim,1,--solver,z3,--no-error-trace,--load-summaries,Benchmarks/TACAS17_ex/__summaries_sin_cos_lia
+c_out/ver_succ.c_out,Benchmarks/TACAS17_ex/sin_cos.c,qfuf,--claim,1,--no-error-trace,--load-summaries,Benchmarks/TACAS17_ex/__summaries_sin_cos

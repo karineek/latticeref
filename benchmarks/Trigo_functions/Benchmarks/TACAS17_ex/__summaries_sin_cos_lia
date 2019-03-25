@@ -1,0 +1,3 @@
+(define-fun |nonlin#0| ((|nonlin::x| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|nonlin::#return_value| Int) ) Bool
+  (= |nonlin::#return_value| 1)
+)

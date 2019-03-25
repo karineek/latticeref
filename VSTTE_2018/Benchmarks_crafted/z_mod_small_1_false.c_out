@@ -1,0 +1,5 @@
+Violated property:
+  file Benchmarks_crafted/z_mod_small_1_false.c line 10 function main
+  assertion m != a
+  m != a
+VERIFICATION FAILED

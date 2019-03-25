@@ -1,0 +1,10 @@
+c_out/ver_succ.c_out,Benchmarks/Crafted/crafted_18_cos.c,qflra,--claim,1,--no-error-trace
+c_out/ver_succ.c_out,Benchmarks/Crafted/crafted_18_cos.c,qflia,--claim,1,--solver,z3,--no-error-trace
+c_out/ver_succ.c_out,Benchmarks/Crafted/crafted_18_cos.c,qfuf,--claim,1,--no-error-trace
+c_out/ver_fail.c_out,Benchmarks/Crafted/crafted_18_cos.c,qflra,--claim,2,--no-error-trace
+c_out/ver_fail.c_out,Benchmarks/Crafted/crafted_18_cos.c,qflia,--claim,2,--solver,z3,--no-error-trace
+c_out/ver_fail.c_out,Benchmarks/Crafted/crafted_18_cos.c,qfuf,--claim,2,--no-error-trace
+c_out/ver_fail.c_out,Benchmarks/Crafted/crafted_18_cos.c,qflra,--claim,3,--no-error-trace
+c_out/ver_fail.c_out,Benchmarks/Crafted/crafted_18_cos.c,qflia,--claim,3,--solver,z3,--no-error-trace
+c_out/ver_fail.c_out,Benchmarks/Crafted/crafted_18_cos.c,qfuf,--claim,3,--no-error-trace
+

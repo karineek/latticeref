@@ -1,0 +1,3 @@
+c_out/ver_succ.c_out,Benchmarks/Crafted/simple_sin_cos_true_test3_loops.c,qflra,--claim,1,--no-error-trace,--unwind,32
+c_out/ver_succ.c_out,Benchmarks/Crafted/simple_sin_cos_true_test3_loops.c,qflia,--claim,1,--solver,z3,--no-error-trace,--unwind,32
+c_out/ver_succ.c_out,Benchmarks/Crafted/simple_sin_cos_true_test3_loops.c,qfuf,--claim,1,--no-error-trace,--unwind,32

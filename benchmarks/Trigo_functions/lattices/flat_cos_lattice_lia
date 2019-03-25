@@ -1,0 +1,5 @@
+(declare-fun |_cos#0| (Int) Int)
+_cos#0
+_cos#0,cos_def#0
+cos_def#0,cos_2a;cos_2a_cos;cos_2a_sin;cos_2sin_shq;cos_3x;cos_bound;cos_decr_0;cos_decr_1;cos_decreasing_0;cos_decreasing_1;cos_eq_0_0;cos_eq_0_1;cos_eq_0_2PI_0;cos_eq_0_2PI_1;cos_form1;cos_form2;cos_ge_0;cos_ge_0_3PI2;cos_gt_0;cos_incr_0;cos_incr_1;cos_increasing_0;cos_increasing_1;cos_le_0;cos_lt_0;cos_minus;cos_neg;cos_period;cos_plus;cos_sin;cos_sin_2a;cos_sin_minus;cos_sin_plus;cos_sin_shift;cos_sin2_cos2;neg_cos;cos_sin_bound_1
+cos_2a;cos_2a_cos;cos_2a_sin;cos_2sin_shq;cos_3x;cos_bound;cos_decr_0;cos_decr_1;cos_decreasing_0;cos_decreasing_1;cos_eq_0_0;cos_eq_0_1;cos_eq_0_2PI_0;cos_eq_0_2PI_1;cos_form1;cos_form2;cos_ge_0;cos_ge_0_3PI2;cos_gt_0;cos_incr_0;cos_incr_1;cos_increasing_0;cos_increasing_1;cos_le_0;cos_lt_0;cos_minus;cos_neg;cos_period;cos_plus;cos_sin;cos_sin_2a;cos_sin_minus;cos_sin_plus;cos_sin_shift;cos_sin2_cos2;neg_cos;cos_sin_bound_1,

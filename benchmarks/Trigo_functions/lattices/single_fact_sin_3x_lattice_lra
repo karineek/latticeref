@@ -1,0 +1,5 @@
+(declare-fun |_sin#0| (Real) Real)
+_sin#0
+_sin#0,sin_def#0
+sin_def#0,sin_3x
+sin_3x,

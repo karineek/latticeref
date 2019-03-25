@@ -1,0 +1,6 @@
+c_out/ver_succ.c_out,Benchmarks/Crafted/simple_sin_cos_true_test12_no_loops.c,qflra,--claim,1,--no-error-trace
+c_out/ver_succ.c_out,Benchmarks/Crafted/simple_sin_cos_true_test12_no_loops.c,qflia,--claim,1,--solver,z3,--no-error-trace
+c_out/ver_succ.c_out,Benchmarks/Crafted/simple_sin_cos_true_test12_no_loops.c,qfuf,--claim,1,--no-error-trace
+c_out/ver_fail.c_out,Benchmarks/Crafted/simple_sin_cos_true_test12_no_loops.c,qflra,--claim,2,--no-error-trace
+c_out/ver_fail.c_out,Benchmarks/Crafted/simple_sin_cos_true_test12_no_loops.c,qflia,--claim,2,--solver,z3,--no-error-trace
+c_out/ver_fail.c_out,Benchmarks/Crafted/simple_sin_cos_true_test12_no_loops.c,qfuf,--claim,2,--no-error-trace

@@ -1,0 +1,5 @@
+(declare-fun |_cos#0| (Real) Real)
+_cos#0
+_cos#0,cos_def#0
+cos_def#0,cos_eq_0_2PI_0;cos_ge_0_3PI2
+cos_eq_0_2PI_0;cos_ge_0_3PI2,

@@ -1,0 +1,5 @@
+Violated property:
+  file Benchmarks_crafted/z_mod_same_full_3_false.c line 9 function main
+  assertion z > (unsigned int)0
+  z > (unsigned int)0
+VERIFICATION FAILED

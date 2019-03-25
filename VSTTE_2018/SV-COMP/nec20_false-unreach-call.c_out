@@ -1,0 +1,5 @@
+Violated property:
+  file SV-COMP/nec20_false-unreach-call.c line 5 function __VERIFIER_assert
+  assertion
+  FALSE
+VERIFICATION FAILED

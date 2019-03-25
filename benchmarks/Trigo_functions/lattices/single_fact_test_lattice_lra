@@ -1,0 +1,5 @@
+(declare-fun;|_sin#0|;(Real);Real)
+_sin#0
+_sin#0,sin_def#0
+sin_def#0,neg_sin;sin_2cos_shq;sin_PI_x;sin_cos_shift;sin_cos_shift_wiki1;sin_cos_shift_wiki2;sin_neg;sin_bound;sin_period;sin_3x;sin_cos_plus;sin_plus;guard_x_neq_y_sin;sin_cos_minus;sin_form3;sin_form4;sin_minus;guard_else_hald_pi;sin_sin2_cos2_1;guard_x_y_in_minus_plus_half_pi_last
+neg_sin;sin_2cos_shq;sin_PI_x;sin_cos_shift;sin_cos_shift_wiki1;sin_cos_shift_wiki2;sin_neg;sin_bound;sin_period;sin_3x;sin_cos_plus;sin_plus;guard_x_neq_y_sin;sin_cos_minus;sin_form3;sin_form4;sin_minus;guard_else_hald_pi;sin_sin2_cos2_1;guard_x_y_in_minus_plus_half_pi_last,

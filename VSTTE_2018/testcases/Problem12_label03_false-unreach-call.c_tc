@@ -1,0 +1,7 @@
+0,SV-COMP/Problem12_label03_false-unreach-call.c,qflra,--unwind,10,--type-constraints,0,--load-sum-model,../hifrog/trunk/cprover/regression/hifrog/benchmarks/z_mod_lattice_lra,--load-summaries,../hifrog/trunk/cprover/regression/hifrog/benchmarks/__summaries_z_mod_lra,--solver,z3
+0,SV-COMP/Problem12_label03_false-unreach-call.c,qflia,--unwind,10,--type-constraints,0,--load-sum-model,../hifrog/trunk/cprover/regression/hifrog/benchmarks/z_mod_lattice_lia,--load-summaries,../hifrog/trunk/cprover/regression/hifrog/benchmarks/__summaries_z_mod_lia,--solver,z3
+0,SV-COMP/Problem12_label03_false-unreach-call.c,qfuf,--unwind,10,--load-sum-model,../hifrog/trunk/cprover/regression/hifrog/benchmarks/z_mod_lattice_uf,--load-summaries,../hifrog/trunk/cprover/regression/hifrog/benchmarks/__summaries_z_mod_uf
+0,SV-COMP/Problem12_label03_false-unreach-call.c,qfcuf,--claim,1,--unwind,10,--theoref
+0,SV-COMP/Problem12_label03_false-unreach-call.c,qflra,--claim,1,--unwind,10,--type-constraints,0
+0,SV-COMP/Problem12_label03_false-unreach-call.c,qflia,--claim,1,--unwind,10,--type-constraints,0
+0,SV-COMP/Problem12_label03_false-unreach-call.c,qfuf,--claim,1,--unwind,10

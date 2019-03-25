@@ -1,0 +1,5 @@
+Violated property:
+  file Benchmarks_crafted/z_mod_opp_opp_1_false.c line 6 function main
+  assertion m + m_p == 1
+  m + m_p == 1
+VERIFICATION FAILED
