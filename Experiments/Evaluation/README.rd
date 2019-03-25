@@ -12,9 +12,13 @@ make -j4 # Replace 4 with an appropriate number
 make
 sudo make install
 
+3. OpenSMT part:
+git clone https://scm.ti-edu.ch/repogit/opensmt2.git
+mkdir build; cd build; cmake -DPRODUCE_PROOF=ON -DCMAKE_BUILD_TYPE=release; make; make install
+
 HiFrog build part:
-3. git pull latticeref-v2-trigo
-4. Build latticeref-v2-trigo: cd hifrog/trunk/cprover; mkdir build; cd build; cmake ../ -DUSE_Z3=ON -DCMAKE_BUILD_TYPE=Release; make hifrog
+4. git pull latticeref-v2-trigo
+5. Build latticeref-v2-trigo: cd hifrog/trunk/cprover; mkdir build; cd build; cmake ../ -DUSE_Z3=ON -DCMAKE_BUILD_TYPE=Release; make hifrog
 
 You shall check if the cmake found the z3 lib, it print this:
 Located z3 version: 4.7.1.0
