@@ -1,5 +1,5 @@
-For Evaluation of Trigonometric Function with Multiple Meet-semilattices:
--------------------------------------------------------------------------
+For Evaluation of Refinement for Programs with Multiple Meet-semilattices for Trigonometric Functions:
+------------------------------------------------------------------------------------------------------
 
 Z3 installation part:
 1. unzip into a new folder z3 version 4.7.1: https://github.com/Z3Prover/z3/releases/tag/z3-4.7.1 (sorry I couldn't sent it the file is big).
