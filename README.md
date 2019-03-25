@@ -3,7 +3,7 @@ Lattice Refinement Algorithms and Benchmarks
 
 Lattice-based refinement for modulo function:
 =============================================
-Tools required: HiFrog, OpenSMT, z3
+Tools required: HiFrog, OpenSMT, z3 \n
 HiFrog Version (for VSTTE 2018): https://scm.ti-edu.ch/projects/hifrog/repository?utf8=%E2%9C%93&rev=latticeref-v1-mod 
 Original results: https://drive.google.com/drive/folders/1WjX8FKcLqg1apNxrHZzHxXWIKo7z9ZLI
 Additional information: http://verify.inf.usi.ch/content/lattice-refinement 
