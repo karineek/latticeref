@@ -48,15 +48,20 @@ The name of the input data refers in the following commands to LRA, to change it
 Run HiFrog
 ~~~~~~~~~~
 ./hifrog <c-file> --logic <logic> --save-summaries __summaries --claim 1 --solver <solver>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Run HiFrog with Summaries
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 ./hifrog <c-file> --logic <logic> --save-summaries __summaries --claim 1 --solver <solver> --solving-mode inc --no-slicing --load-summaries user_defined_summaries/__summaries_cos_lra_single,user_defined_summaries/__summaries_sin_lra_single,user_defined_summaries/__summaries_const_sin_cos --load-sum-model lattices/flat_cos_lattice_lra,lattices/flat_sin_lattice_lra 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Run HiFrog with a Single Lattice
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ./hifrog <c-file> --logic <logic> --save-summaries __summaries --claim 1 --solver <solver> --solving-mode inc --no-slicing --load-summaries user_defined_summaries/__summaries_sin_lra,user_defined_summaries/__summaries_cos_lra,user_defined_summaries/__summaries_const_sin_cos --load-sum-model lattices/sin_lattice_lra,lattices/cos_lattice_lra 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 Run HiFrog with Multiple Lattices
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ./hifrog <c-file> --logic <logic> --save-summaries __summaries --claim 1 --solver <solver> --solving-mode inc --no-slicing --load-summaries user_defined_summaries/__summaries_cos_lra,user_defined_summaries/__summaries_sin_lra,user_defined_summaries/__summaries_const_sin_cos --load-sum-model lattices/cos_lattice_lra,lattices/sin_lattice_lra --no-error-trace
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
