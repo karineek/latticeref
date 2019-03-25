@@ -1,0 +1,804 @@
+(declare-fun |_sin#0| (Real) Real)
+(declare-fun |_cos#0| (Real) Real)
+(declare-fun uns_cos (Real) Real)
+(declare-fun uns_sin (Real) Real)
+(declare-fun |symex::nondet::sin_0| () Real)
+(declare-fun |symex::nondet::sin_1| () Real)
+(declare-fun |symex::nondet::sin_2| () Real)
+(declare-fun |symex::nondet::sin_17| () Real)
+(declare-fun |symex::nondet::sin_18| () Real)
+(declare-fun |symex::M_PI| () Real)
+(declare-fun |symex::M_PI_4| () Real)
+(declare-fun |symex::M_PI_2| () Real)
+(declare-fun |symex::M_SQRT2| () Real)
+(declare-fun |symex::M_1_PI| () Real)
+(declare-fun |symex::M_2_PI| () Real)
+(declare-fun |symex::M_2_SQRTPI| () Real)
+(declare-fun |symex::M_E| () Real)
+(declare-fun |symex::M_LN10| () Real)
+(declare-fun |symex::M_LN2| () Real)
+(declare-fun |symex::M_LOG10E| () Real)
+(declare-fun |symex::M_LOG2E| () Real)
+(declare-fun |symex::M_SQRT1_2| () Real)
+(declare-const 0 () Real)
+(declare-const 1 () Real)
+(declare-const 2 () Real)
+(declare-const 3 () Real)
+(declare-const 4 () Real)
+(declare-const 5 () Real)
+(declare-const 6 () Real)
+(declare-const 7 () Real)
+(declare-const 8 () Real)
+(declare-const 9 () Real)
+(declare-const 10 () Real)
+(declare-const 11 () Real)
+(declare-const 0.31830988618379067154 () Real)
+(declare-const 0.63661977236758134308 () Real)
+(declare-const 1.12837916709551257390 () Real)
+(declare-const 2.7182818284590452354 () Real)
+(declare-const 2.30258509299404568402 () Real)
+(declare-const 0.69314718055994530942 () Real)
+(declare-const 0.43429448190325182765 () Real)
+(declare-const 1.4426950408889634074 () Real)
+(declare-const 1.57079632679489661923 () Real)
+(declare-const 0.78539816339744830962 () Real)
+(declare-const 3.14159265358979323846 () Real)
+(declare-const 0.70710678118654752440 () Real)
+(declare-const 1.41421356237309504880 () Real)
+(declare-fun - (Real ) Real)
+(declare-fun * (Real Real ) Real)
+(declare-fun / (Real Real ) Real)
+(declare-fun + (Real Real ) Real)
+(declare-fun - (Real Real ) Real)
+(declare-fun < (Real Real ) Bool)
+(declare-fun <= (Real Real ) Bool)
+(declare-fun > (Real Real ) Bool)
+(declare-fun >= (Real Real ) Bool)
+
+
+(define-fun |sin_cos_shift#0| ((|sin_cos_shift::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|sin_cos_shift::#return_value| Real) ) Bool
+  (let ((?def154 |sin_cos_shift::#return_value|))
+  (let ((?def155 (= (|_sin#0| |sin_cos_shift::a|) ?def154)))
+  (let ((?def156 (= ?def154 (|_cos#0| (- |symex::M_PI_2| |sin_cos_shift::a|)))))
+  (let ((?def157 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def158 (and ?def156 ?def157)))
+  (let ((?def159 (and ?def155 ?def158)))
+
+?def159
+)))))))
+
+(define-fun |sin_neg#0| ((|sin_neg::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|sin_neg::#return_value| Real) ) Bool
+  (let ((?def298 |sin_neg::#return_value|))
+  (let ((?def299 (= (|_sin#0| |sin_neg::a|) ?def298)))
+  (let ((?def300 (= (|_sin#0| (- |sin_neg::a|)) (- ?def298))))
+  (let ((?def301 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def302 (and ?def300 ?def301)))
+  (let ((?def303 (and ?def299 ?def302)))
+
+?def303
+)))))))
+
+(define-fun |neg_sin#0| ((|neg_sin::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|neg_sin::#return_value| Real) ) Bool
+  (let ((?def100 |neg_sin::#return_value|))
+  (let ((?def101 (= (|_sin#0| |neg_sin::a|) ?def100)))
+  (let ((?def102 (= (- ?def100) (|_sin#0| (+ |symex::M_PI| |neg_sin::a|)))))
+  (let ((?def103 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def104 (and ?def102 ?def103)))
+  (let ((?def105 (and ?def101 ?def104)))
+
+?def105
+)))))))
+
+(define-fun |sin_2cos_shq#0| ((|sin_2cos_shq::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|sin_2cos_shq::#return_value| Real) ) Bool
+  (let ((?def106 |sin_2cos_shq::#return_value|))
+  (let ((?def107 (= (|_sin#0| |sin_2cos_shq::a|) ?def106)))
+  (let ((?def108 (= ?def106 (- (|_cos#0| (+ |symex::M_PI_2| |sin_2cos_shq::a|))))))
+  (let ((?def109 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def110 (and ?def108 ?def109)))
+  (let ((?def111 (and ?def107 ?def110)))
+
+?def111
+)))))))
+
+(define-fun |sin_3x#0| ((|sin_3x::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|sin_3x::#return_value| Real) ) Bool
+  (let ((?def112 |sin_3x::#return_value|))
+  (let ((?def113 (= (|_sin#0| |sin_3x::a|) ?def112)))
+  (let ((?def114 (= (|_sin#0| (* 3 |sin_3x::a|)) (- (* 3 ?def112) (* 4 (* ?def112 (* ?def112 ?def112)))))))
+  (let ((?def115 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def116 (and ?def114 ?def115)))
+  (let ((?def117 (and ?def113 ?def116)))
+
+?def117
+)))))))
+
+(define-fun |sin_PI_x#0| ((|sin_PI_x::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|sin_PI_x::#return_value| Real) ) Bool
+  (let ((?def118 |sin_PI_x::#return_value|))
+  (let ((?def119 (= (|_sin#0| |sin_PI_x::a|) ?def118)))
+  (let ((?def120 (= ?def118 (|_sin#0| (- |symex::M_PI| |sin_PI_x::a|)))))
+  (let ((?def121 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def122 (and ?def120 ?def121)))
+  (let ((?def123 (and ?def119 ?def122)))
+
+?def123
+)))))))
+
+(define-fun |sin_bound#0| ((|sin_bound::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|sin_bound::#return_value| Real) ) Bool
+  (let ((?def124 |sin_bound::#return_value|))
+  (let ((?def125 (= (|_sin#0| |sin_bound::a|) ?def124)))
+  (let ((?def126 (and (<= (- 1) ?def124) (<= ?def124 1))))
+  (let ((?def127 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def128 (and ?def126 ?def127)))
+  (let ((?def129 (and ?def125 ?def128)))
+
+?def129
+)))))))
+
+(define-fun |sin_cos_2a#0| ((|sin_cos_2a::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|sin_cos_2a::#return_value| Real) ) Bool
+  (let ((?def130 |sin_cos_2a::#return_value|))
+  (let ((?def131 (= (|_sin#0| |sin_cos_2a::a|) ?def130)))
+  (let ((?def132 (= (|_cos#0| (* 2 |sin_cos_2a::a|)) (- (* (|_cos#0| |sin_cos_2a::a|) (|_cos#0| |sin_cos_2a::a|)) (* ?def130 ?def130)))))
+  (let ((?def133 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def134 (and ?def132 ?def133)))
+  (let ((?def135 (and ?def131 ?def134)))
+
+?def135
+)))))))
+
+(define-fun |sin_cos_2a_sin#0| ((|sin_cos_2a_sin::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|sin_cos_2a_sin::#return_value| Real) ) Bool
+  (let ((?def136 |sin_cos_2a_sin::#return_value|))
+  (let ((?def137 (= (|_sin#0| |sin_cos_2a_sin::a|) ?def136)))
+  (let ((?def138 (= (|_cos#0| (* 2 |sin_cos_2a_sin::a|)) (- 1 (* 2 (* ?def136 ?def136))))))
+  (let ((?def139 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def140 (and ?def138 ?def139)))
+  (let ((?def141 (and ?def137 ?def140)))
+
+?def141
+)))))))
+
+(define-fun |sin_cos_minus#0| ((|sin_cos_minus::a| Real) (|sin_cos_minus::b| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|sin_cos_minus::#return_value| Real) ) Bool
+  (let ((?def142 |sin_cos_minus::#return_value|))
+  (let ((?def143 (= (|_sin#0| |sin_cos_minus::a|) ?def142)))
+  (let ((?def144 (and (= (uns_cos (- |sin_cos_minus::a| |sin_cos_minus::b|)) (+ (* (uns_cos |sin_cos_minus::a|) (uns_cos |sin_cos_minus::b|)) (* ?def142 (uns_sin |sin_cos_minus::b|)))) (and (= (* (uns_cos |sin_cos_minus::a|) (uns_cos |sin_cos_minus::b|)) (* (uns_cos |sin_cos_minus::b|) (uns_cos |sin_cos_minus::a|))) (= (* ?def142 (uns_sin |sin_cos_minus::b|)) (* (uns_sin |sin_cos_minus::b|) ?def142))))))
+  (let ((?def145 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def146 (and ?def144 ?def145)))
+  (let ((?def147 (and ?def143 ?def146)))
+
+?def147
+)))))))
+
+(define-fun |sin_cos_plus#0| ((|sin_cos_plus::a| Real) (|sin_cos_plus::b| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|sin_cos_plus::#return_value| Real) ) Bool
+  (let ((?def148 |sin_cos_plus::#return_value|))
+  (let ((?def149 (= (|_sin#0| |sin_cos_plus::a|) ?def148)))
+  (let ((?def150 (and (= (uns_cos (+ |sin_cos_plus::a| |sin_cos_plus::b|)) (- (* (uns_cos |sin_cos_plus::a|) (uns_cos |sin_cos_plus::b|)) (* ?def148 (uns_sin |sin_cos_plus::b|)))) (and (= (* (uns_cos |sin_cos_plus::a|) (uns_cos |sin_cos_plus::b|)) (* (uns_cos |sin_cos_plus::b|) (uns_cos |sin_cos_plus::a|))) (= (* ?def148 (uns_sin |sin_cos_plus::b|)) (* (uns_sin |sin_cos_plus::b|) ?def148))))))
+  (let ((?def151 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def152 (and ?def150 ?def151)))
+  (let ((?def153 (and ?def149 ?def152)))
+
+?def153
+)))))))
+
+(define-fun |sin_decr_0#0| ((|sin_decr_0::a| Real) (|sin_decr_0::b| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|sin_decr_0::#return_value| Real) ) Bool
+  (let ((?def172 |sin_decr_0::#return_value|))
+  (let ((?def173 (= (|_sin#0| |sin_decr_0::a|) ?def172)))
+  (let ((?def174 (or (not (and (and (<= |sin_decr_0::a| (* 3 (/ |symex::M_PI| 2))) (<= (/ |symex::M_PI| 2) |sin_decr_0::a|)) (and (<= |sin_decr_0::b| (* 3 (/ |symex::M_PI| 2))) (<= (/ |symex::M_PI| 2) |sin_decr_0::b|))))(and (or (not (<= ?def172 (uns_sin |sin_decr_0::b|))) (<= |sin_decr_0::b| |sin_decr_0::a|)) (or (not (<= (uns_sin |sin_decr_0::b|) ?def172)) (<= |sin_decr_0::a| |sin_decr_0::b|))))))
+  (let ((?def175 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def176 (and ?def174 ?def175)))
+  (let ((?def177 (and ?def173 ?def176)))
+
+?def177
+)))))))
+
+(define-fun |sin_decr_1#0| ((|sin_decr_1::a| Real) (|sin_decr_1::b| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|sin_decr_1::#return_value| Real) ) Bool
+  (let ((?def178 |sin_decr_1::#return_value|))
+  (let ((?def179 (= (|_sin#0| |sin_decr_1::a|) ?def178)))
+  (let ((?def180 (or (not (and (and (<= |sin_decr_1::a| (* 3 (/ |symex::M_PI| 2))) (<= (/ |symex::M_PI| 2) |sin_decr_1::a|)) (and (<= |sin_decr_1::b| (* 3 (/ |symex::M_PI| 2))) (<= (/ |symex::M_PI| 2) |sin_decr_1::b|))))(and (or (not (<= |sin_decr_1::a| |sin_decr_1::b|)) (<= (uns_sin |sin_decr_1::b|) ?def178)) (or (not (<= |sin_decr_1::b| |sin_decr_1::a|)) (<= ?def178 (uns_sin |sin_decr_1::b|)))))))
+  (let ((?def181 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def182 (and ?def180 ?def181)))
+  (let ((?def183 (and ?def179 ?def182)))
+
+?def183
+)))))))
+
+(define-fun |sin_decreasing_0#0| ((|sin_decreasing_0::a| Real) (|sin_decreasing_0::b| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|sin_decreasing_0::#return_value| Real) ) Bool
+  (let ((?def184 |sin_decreasing_0::#return_value|))
+  (let ((?def185 (= (|_sin#0| |sin_decreasing_0::a|) ?def184)))
+  (let ((?def186 (or (not (and (and (<= |sin_decreasing_0::a| (* 3 (/ |symex::M_PI| 2))) (<= (/ |symex::M_PI| 2) |sin_decreasing_0::a|)) (and (<= |sin_decreasing_0::b| (* 3 (/ |symex::M_PI| 2))) (<= (/ |symex::M_PI| 2) |sin_decreasing_0::b|))))(and (or (not (< ?def184 (uns_sin |sin_decreasing_0::b|))) (< |sin_decreasing_0::b| |sin_decreasing_0::a|)) (or (not (< (uns_sin |sin_decreasing_0::b|) ?def184)) (< |sin_decreasing_0::a| |sin_decreasing_0::b|))))))
+  (let ((?def187 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def188 (and ?def186 ?def187)))
+  (let ((?def189 (and ?def185 ?def188)))
+
+?def189
+)))))))
+
+(define-fun |sin_cos_shift_wiki1#0| ((|sin_cos_shift_wiki1::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|sin_cos_shift_wiki1::#return_value| Real) ) Bool
+  (let ((?def160 |sin_cos_shift_wiki1::#return_value|))
+  (let ((?def161 (= (|_sin#0| |sin_cos_shift_wiki1::a|) ?def160)))
+  (let ((?def162 (= ?def160 (|_cos#0| (- |sin_cos_shift_wiki1::a| |symex::M_PI_2|)))))
+  (let ((?def163 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def164 (and ?def162 ?def163)))
+  (let ((?def165 (and ?def161 ?def164)))
+
+?def165
+)))))))
+
+(define-fun |sin_decreasing_1#0| ((|sin_decreasing_1::a| Real) (|sin_decreasing_1::b| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|sin_decreasing_1::#return_value| Real) ) Bool
+  (let ((?def190 |sin_decreasing_1::#return_value|))
+  (let ((?def191 (= (|_sin#0| |sin_decreasing_1::a|) ?def190)))
+  (let ((?def192 (or (not (and (and (<= |sin_decreasing_1::a| (* 3 (/ |symex::M_PI| 2))) (<= (/ |symex::M_PI| 2) |sin_decreasing_1::a|)) (and (<= |sin_decreasing_1::b| (* 3 (/ |symex::M_PI| 2))) (<= (/ |symex::M_PI| 2) |sin_decreasing_1::b|))))(and (or (not (< |sin_decreasing_1::a| |sin_decreasing_1::b|)) (< (uns_sin |sin_decreasing_1::b|) ?def190)) (or (not (< |sin_decreasing_1::b| |sin_decreasing_1::a|)) (< ?def190 (uns_sin |sin_decreasing_1::b|)))))))
+  (let ((?def193 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def194 (and ?def192 ?def193)))
+  (let ((?def195 (and ?def191 ?def194)))
+
+?def195
+)))))))
+
+(define-fun |sin_def#0| ((|sin_def::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|sin_def::#return_value| Real) ) Bool
+  (let ((?def196 |sin_def::#return_value|))
+  (let ((?def197 (= (|_sin#0| |sin_def::a|) ?def196)))
+  (let ((?def198 (and (< 0 (/ |symex::M_PI| 2))(and (<= |symex::M_PI| 4)(and (= (- (/ |symex::M_SQRT2| 2)) (|_cos#0| (* |symex::M_PI| (/ 3 4))))(and (= (- (/ |symex::M_SQRT2| 2)) (|_cos#0| (* |symex::M_PI| (/ 5 4))))(and (= (- (/ |symex::M_SQRT2| 2)) (|_cos#0| (* 3 |symex::M_PI_4|)))(and (= (- (/ |symex::M_SQRT2| 2)) (|_cos#0| (* 5 |symex::M_PI_4|)))(and (= (- (/ |symex::M_SQRT2| 2)) (|_sin#0| (* |symex::M_PI| (/ 5 4))))(and (= (- (/ |symex::M_SQRT2| 2)) (|_sin#0| (* |symex::M_PI| (/ 7 4))))(and (= (- (/ |symex::M_SQRT2| 2)) (|_sin#0| (* 5 |symex::M_PI_4|)))(and (= (- (/ |symex::M_SQRT2| 2)) (|_sin#0| (* 7 |symex::M_PI_4|)))(and (= (- (/ 1 2)) (|_cos#0| (* |symex::M_PI| (/ 2 3))))(and (= (- (/ 1 2)) (|_cos#0| (* |symex::M_PI| (/ 4 3))))(and (= (- (/ 1 2)) (|_sin#0| (* |symex::M_PI| (/ 11 6))))(and (= (- (/ 1 2)) (|_sin#0| (* |symex::M_PI| (/ 7 6))))(and (= (- 1) (|_cos#0| |symex::M_PI|))(and (= (/ |symex::M_SQRT2| 2) (|_cos#0| (* |symex::M_PI| (/ 7 4))))(and (= (/ |symex::M_SQRT2| 2) (|_cos#0| (* 7 |symex::M_PI_4|)))(and (= (/ |symex::M_SQRT2| 2) (|_cos#0| (/ |symex::M_PI| 4)))(and (= (/ |symex::M_SQRT2| 2) (|_cos#0| |symex::M_PI_4|))(and (= (/ |symex::M_SQRT2| 2) (|_sin#0| (* |symex::M_PI| (/ 3 4))))(and (= (/ |symex::M_SQRT2| 2) (|_sin#0| (* 3 |symex::M_PI_4|)))(and (= (/ |symex::M_SQRT2| 2) (|_sin#0| (/ |symex::M_PI| 4)))(and (= (/ |symex::M_SQRT2| 2) (|_sin#0| |symex::M_PI_4|))(and (= (/ 1 2) (|_cos#0| (* |symex::M_PI| (/ 5 3))))(and (= (/ 1 2) (|_cos#0| (/ |symex::M_PI| 3)))(and (= (/ 1 2) (|_sin#0| (* |symex::M_PI| (/ 5 6))))(and (= (/ 1 2) (|_sin#0| (/ |symex::M_PI| 6)))(and (= (- 1) (|_sin#0| (* 3 |symex::M_PI_2|)))(and (= |symex::M_1_PI| 0.31830988618379067154)(and (= |symex::M_2_PI| 0.63661977236758134308)(and (= |symex::M_2_SQRTPI| 1.12837916709551257390)(and (= |symex::M_E| 2.7182818284590452354)(and (= |symex::M_LN10| 2.30258509299404568402)(and (= |symex::M_LN2| 0.69314718055994530942)(and (= |symex::M_LOG10E| 0.43429448190325182765)(and (= |symex::M_LOG2E| 1.4426950408889634074)(and (= |symex::M_PI_2| 1.57079632679489661923)(and (= |symex::M_PI_4| 0.78539816339744830962)(and (= |symex::M_PI| 3.14159265358979323846)(and (= |symex::M_SQRT1_2| 0.70710678118654752440)(and (= |symex::M_SQRT2| 1.41421356237309504880)(and (= 0 (|_cos#0| (* |symex::M_PI| (/ 3 2))))(and (= 0 (|_cos#0| (* 3 |symex::M_PI_2|)))(and (= 0 (|_cos#0| (/ |symex::M_PI| 2)))(and (= 0 (|_cos#0| |symex::M_PI_2|))(and (= 0 (|_sin#0| (* 2 |symex::M_PI|)))(and (= 0 (|_sin#0| |symex::M_PI|))(and (= 0 (|_sin#0| 0))(and (= 1 (|_cos#0| (* 2 |symex::M_PI|)))(and (= 1 (|_cos#0| 0))(and (= (- 1) (|_sin#0| (* |symex::M_PI| (/ 3 2))))(and (= 1 (|_sin#0| (/ |symex::M_PI| 2)))(and (= 1 (|_sin#0| |symex::M_PI_2|))(and (> (|_sin#0| (/ 7 8)) (|_cos#0| (/ 7 8)))(and (> |symex::M_PI| 0)(and (and (<= (/ 7 8) |symex::M_PI_2|) (<= |symex::M_PI_2| (/ 7 4)))(and (not (= |symex::M_PI| 0))(and (= ?def196 (|_sin#0| |sin_def::a|)) (= ?def196 (uns_sin |sin_def::a|))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
+  (let ((?def199 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def200 (and ?def198 ?def199)))
+  (let ((?def201 (and ?def197 ?def200)))
+
+?def201
+)))))))
+
+(define-fun |sin_eq_0_0#0| ((|sin_eq_0_0::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|sin_eq_0_0::#return_value| Real) ) Bool
+  (let ((?def202 |sin_eq_0_0::#return_value|))
+  (let ((?def203 (= (|_sin#0| |sin_eq_0_0::a|) ?def202)))
+  (let ((?def204 (or (not (= 0 ?def202)) (= |sin_eq_0_0::a| (* |symex::M_PI| |symex::nondet::sin_2|)))))
+  (let ((?def205 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def206 (and ?def204 ?def205)))
+  (let ((?def207 (and ?def203 ?def206)))
+
+?def207
+)))))))
+
+(define-fun |sin_eq_0_1#0| ((|sin_eq_0_1::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|sin_eq_0_1::#return_value| Real) ) Bool
+  (let ((?def208 |sin_eq_0_1::#return_value|))
+  (let ((?def209 (= (|_sin#0| |sin_eq_0_1::a|) ?def208)))
+  (let ((?def210 (or (not (= |sin_eq_0_1::a| (* |symex::M_PI| |symex::nondet::sin_1|))) (= 0 ?def208))))
+  (let ((?def211 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def212 (and ?def210 ?def211)))
+  (let ((?def213 (and ?def209 ?def212)))
+
+?def213
+)))))))
+
+(define-fun |sin_eq_O_2PI_0#0| ((|sin_eq_O_2PI_0::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|sin_eq_O_2PI_0::#return_value| Real) ) Bool
+  (let ((?def214 |sin_eq_O_2PI_0::#return_value|))
+  (let ((?def215 (= (|_sin#0| |sin_eq_O_2PI_0::a|) ?def214)))
+  (let ((?def216 (or (not (and (and (<= 0 |sin_eq_O_2PI_0::a|) (<= |sin_eq_O_2PI_0::a| (* 2 |symex::M_PI|))) (= 0 ?def214))) (or (or (= |sin_eq_O_2PI_0::a| 0) (= |sin_eq_O_2PI_0::a| |symex::M_PI|)) (= |sin_eq_O_2PI_0::a| (* 2 |symex::M_PI|))))))
+  (let ((?def217 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def218 (and ?def216 ?def217)))
+  (let ((?def219 (and ?def215 ?def218)))
+
+?def219
+)))))))
+
+(define-fun |sin_eq_O_2PI_1#0| ((|sin_eq_O_2PI_1::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|sin_eq_O_2PI_1::#return_value| Real) ) Bool
+  (let ((?def220 |sin_eq_O_2PI_1::#return_value|))
+  (let ((?def221 (= (|_sin#0| |sin_eq_O_2PI_1::a|) ?def220)))
+  (let ((?def222 (or (not (and (and (<= 0 |sin_eq_O_2PI_1::a|) (<= |sin_eq_O_2PI_1::a| (* 2 |symex::M_PI|))) (or (or (= |sin_eq_O_2PI_1::a| 0) (= |sin_eq_O_2PI_1::a| |symex::M_PI|)) (= |sin_eq_O_2PI_1::a| (* 2 |symex::M_PI|))))) (= 0 ?def220))))
+  (let ((?def223 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def224 (and ?def222 ?def223)))
+  (let ((?def225 (and ?def221 ?def224)))
+
+?def225
+)))))))
+
+(define-fun |sin_form3#0| ((|sin_form3::a| Real) (|sin_form3::b| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|sin_form3::#return_value| Real) ) Bool
+  (let ((?def226 |sin_form3::#return_value|))
+  (let ((?def227 (= (|_sin#0| |sin_form3::a|) ?def226)))
+  (let ((?def228 (= (+ ?def226 (uns_sin |sin_form3::b|)) (* 2 (* (uns_cos (/ (- |sin_form3::a| |sin_form3::b|) 2)) (uns_sin (/ (+ |sin_form3::a| |sin_form3::b|) 2)))))))
+  (let ((?def229 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def230 (and ?def228 ?def229)))
+  (let ((?def231 (and ?def227 ?def230)))
+
+?def231
+)))))))
+
+(define-fun |sin_form4#0| ((|sin_form4::a| Real) (|sin_form4::b| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|sin_form4::#return_value| Real) ) Bool
+  (let ((?def232 |sin_form4::#return_value|))
+  (let ((?def233 (= (|_sin#0| |sin_form4::a|) ?def232)))
+  (let ((?def234 (= (- ?def232 (uns_sin |sin_form4::b|)) (* 2 (* (uns_cos (/ (+ |sin_form4::a| |sin_form4::b|) 2)) (uns_sin (/ (- |sin_form4::a| |sin_form4::b|) 2)))))))
+  (let ((?def235 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def236 (and ?def234 ?def235)))
+  (let ((?def237 (and ?def233 ?def236)))
+
+?def237
+)))))))
+
+(define-fun |sin_ge_0#0| ((|sin_ge_0::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|sin_ge_0::#return_value| Real) ) Bool
+  (let ((?def238 |sin_ge_0::#return_value|))
+  (let ((?def239 (= (|_sin#0| |sin_ge_0::a|) ?def238)))
+  (let ((?def240 (or (not (and (<= 0 |sin_ge_0::a|) (<= |sin_ge_0::a| |symex::M_PI|))) (<= 0 ?def238))))
+  (let ((?def241 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def242 (and ?def240 ?def241)))
+  (let ((?def243 (and ?def239 ?def242)))
+
+?def243
+)))))))
+
+(define-fun |sin_gt_0#0| ((|sin_gt_0::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|sin_gt_0::#return_value| Real) ) Bool
+  (let ((?def244 |sin_gt_0::#return_value|))
+  (let ((?def245 (= (|_sin#0| |sin_gt_0::a|) ?def244)))
+  (let ((?def246 (or (not (and (< 0 |sin_gt_0::a|) (< |sin_gt_0::a| |symex::M_PI|))) (< 0 ?def244))))
+  (let ((?def247 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def248 (and ?def246 ?def247)))
+  (let ((?def249 (and ?def245 ?def248)))
+
+?def249
+)))))))
+
+(define-fun |sin_incr_0#0| ((|sin_incr_0::a| Real) (|sin_incr_0::b| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|sin_incr_0::#return_value| Real) ) Bool
+  (let ((?def250 |sin_incr_0::#return_value|))
+  (let ((?def251 (= (|_sin#0| |sin_incr_0::a|) ?def250)))
+  (let ((?def252 (or (not (and (and (<= (- (/ |symex::M_PI| 2)) |sin_incr_0::a|) (<= |sin_incr_0::a| (/ |symex::M_PI| 2))) (and (<= (- (/ |symex::M_PI| 2)) |sin_incr_0::b|) (<= |sin_incr_0::b| (/ |symex::M_PI| 2)))))(and (or (not (<= ?def250 (uns_sin |sin_incr_0::b|))) (<= |sin_incr_0::a| |sin_incr_0::b|)) (or (not (<= (uns_sin |sin_incr_0::b|) ?def250)) (<= |sin_incr_0::b| |sin_incr_0::a|))))))
+  (let ((?def253 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def254 (and ?def252 ?def253)))
+  (let ((?def255 (and ?def251 ?def254)))
+
+?def255
+)))))))
+
+(define-fun |sin_incr_1#0| ((|sin_incr_1::a| Real) (|sin_incr_1::b| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|sin_incr_1::#return_value| Real) ) Bool
+  (let ((?def256 |sin_incr_1::#return_value|))
+  (let ((?def257 (= (|_sin#0| |sin_incr_1::a|) ?def256)))
+  (let ((?def258 (or (not (and (and (<= (- (/ |symex::M_PI| 2)) |sin_incr_1::a|) (<= |sin_incr_1::a| (/ |symex::M_PI| 2))) (and (<= (- (/ |symex::M_PI| 2)) |sin_incr_1::b|) (<= |sin_incr_1::b| (/ |symex::M_PI| 2)))))(and (or (not (<= |sin_incr_1::a| |sin_incr_1::b|)) (<= ?def256 (uns_sin |sin_incr_1::b|))) (or (not (<= |sin_incr_1::b| |sin_incr_1::a|)) (<= (uns_sin |sin_incr_1::b|) ?def256))))))
+  (let ((?def259 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def260 (and ?def258 ?def259)))
+  (let ((?def261 (and ?def257 ?def260)))
+
+?def261
+)))))))
+
+(define-fun |sin_increasing_0#0| ((|sin_increasing_0::a| Real) (|sin_increasing_0::b| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|sin_increasing_0::#return_value| Real) ) Bool
+  (let ((?def262 |sin_increasing_0::#return_value|))
+  (let ((?def263 (= (|_sin#0| |sin_increasing_0::a|) ?def262)))
+  (let ((?def264 (or (not (and (and (<= (- (/ |symex::M_PI| 2)) |sin_increasing_0::a|) (<= |sin_increasing_0::a| (/ |symex::M_PI| 2))) (and (<= (- (/ |symex::M_PI| 2)) |sin_increasing_0::b|) (<= |sin_increasing_0::b| (/ |symex::M_PI| 2)))))(and (or (not (< ?def262 (uns_sin |sin_increasing_0::b|))) (< |sin_increasing_0::a| |sin_increasing_0::b|)) (or (not (< (uns_sin |sin_increasing_0::b|) ?def262)) (< |sin_increasing_0::b| |sin_increasing_0::a|))))))
+  (let ((?def265 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def266 (and ?def264 ?def265)))
+  (let ((?def267 (and ?def263 ?def266)))
+
+?def267
+)))))))
+
+(define-fun |sin_increasing_1#0| ((|sin_increasing_1::a| Real) (|sin_increasing_1::b| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|sin_increasing_1::#return_value| Real) ) Bool
+  (let ((?def268 |sin_increasing_1::#return_value|))
+  (let ((?def269 (= (|_sin#0| |sin_increasing_1::a|) ?def268)))
+  (let ((?def270 (or (not (and (and (<= (- (/ |symex::M_PI| 2)) |sin_increasing_1::a|) (<= |sin_increasing_1::a| (/ |symex::M_PI| 2))) (and (<= (- (/ |symex::M_PI| 2)) |sin_increasing_1::b|) (<= |sin_increasing_1::b| (/ |symex::M_PI| 2)))))(and (or (not (< |sin_increasing_1::a| |sin_increasing_1::b|)) (< ?def268 (uns_sin |sin_increasing_1::b|))) (or (not (< |sin_increasing_1::b| |sin_increasing_1::a|)) (< (uns_sin |sin_increasing_1::b|) ?def268))))))
+  (let ((?def271 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def272 (and ?def270 ?def271)))
+  (let ((?def273 (and ?def269 ?def272)))
+
+?def273
+)))))))
+
+(define-fun |sin_le_0#0| ((|sin_le_0::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|sin_le_0::#return_value| Real) ) Bool
+  (let ((?def274 |sin_le_0::#return_value|))
+  (let ((?def275 (= (|_sin#0| |sin_le_0::a|) ?def274)))
+  (let ((?def276 (or (not (and (<= |symex::M_PI| |sin_le_0::a|) (<= |sin_le_0::a| (* 2 |symex::M_PI|)))) (<= ?def274 0))))
+  (let ((?def277 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def278 (and ?def276 ?def277)))
+  (let ((?def279 (and ?def275 ?def278)))
+
+?def279
+)))))))
+
+(define-fun |sin_lt_0#0| ((|sin_lt_0::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|sin_lt_0::#return_value| Real) ) Bool
+  (let ((?def280 |sin_lt_0::#return_value|))
+  (let ((?def281 (= (|_sin#0| |sin_lt_0::a|) ?def280)))
+  (let ((?def282 (or (not (and (< |symex::M_PI| |sin_lt_0::a|) (< |sin_lt_0::a| (* 2 |symex::M_PI|)))) (< ?def280 0))))
+  (let ((?def283 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def284 (and ?def282 ?def283)))
+  (let ((?def285 (and ?def281 ?def284)))
+
+?def285
+)))))))
+
+(define-fun |sin_lt_0_var#0| ((|sin_lt_0_var::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|sin_lt_0_var::#return_value| Real) ) Bool
+  (let ((?def286 |sin_lt_0_var::#return_value|))
+  (let ((?def287 (= (|_sin#0| |sin_lt_0_var::a|) ?def286)))
+  (let ((?def288 (or (not (and (< (- |symex::M_PI|) |sin_lt_0_var::a|) (< |sin_lt_0_var::a| 0))) (< ?def286 0))))
+  (let ((?def289 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def290 (and ?def288 ?def289)))
+  (let ((?def291 (and ?def287 ?def290)))
+
+?def291
+)))))))
+
+(define-fun |sin_minus#0| ((|sin_minus::a| Real) (|sin_minus::b| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|sin_minus::#return_value| Real) ) Bool
+  (let ((?def292 |sin_minus::#return_value|))
+  (let ((?def293 (= (|_sin#0| |sin_minus::a|) ?def292)))
+  (let ((?def294 (and (= (uns_sin (- |sin_minus::a| |sin_minus::b|)) (- (* ?def292 (uns_cos |sin_minus::b|)) (* (uns_cos |sin_minus::a|) (uns_sin |sin_minus::b|)))) (and (= (* ?def292 (uns_cos |sin_minus::b|)) (* (uns_cos |sin_minus::b|) ?def292)) (= (* (uns_cos |sin_minus::a|) (uns_sin |sin_minus::b|)) (* (uns_sin |sin_minus::b|) (uns_cos |sin_minus::a|)))))))
+  (let ((?def295 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def296 (and ?def294 ?def295)))
+  (let ((?def297 (and ?def293 ?def296)))
+
+?def297
+)))))))
+
+(define-fun |sin_period#0| ((|sin_period::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|sin_period::#return_value| Real) ) Bool
+  (let ((?def304 |sin_period::#return_value|))
+  (let ((?def305 (= (|_sin#0| |sin_period::a|) ?def304)))
+  (let ((?def306 (= ?def304 (|_sin#0| (+ |sin_period::a| (* 2 (* |symex::M_PI| |symex::nondet::sin_0|)))))))
+  (let ((?def307 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def308 (and ?def306 ?def307)))
+  (let ((?def309 (and ?def305 ?def308)))
+
+?def309
+)))))))
+
+(define-fun |sin_plus#0| ((|sin_plus::a| Real) (|sin_plus::b| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|sin_plus::#return_value| Real) ) Bool
+  (let ((?def310 |sin_plus::#return_value|))
+  (let ((?def311 (= (|_sin#0| |sin_plus::a|) ?def310)))
+  (let ((?def312 (and (= (uns_sin (+ |sin_plus::a| |sin_plus::b|)) (+ (* ?def310 (uns_cos |sin_plus::b|)) (* (uns_cos |sin_plus::a|) (uns_sin |sin_plus::b|))))
+ (and (= (* ?def310 (uns_cos |sin_plus::b|)) (* (uns_cos |sin_plus::b|) ?def310))
+  (= (* (uns_cos |sin_plus::a|) (uns_sin |sin_plus::b|)) (* (uns_sin |sin_plus::b|) (uns_cos |sin_plus::a|)))))))
+  (let ((?def313 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def314 (and ?def312 ?def313)))
+  (let ((?def315 (and ?def311 ?def314)))
+
+?def315
+)))))))
+
+(define-fun |sin_pos_tech#0| ((|sin_pos_tech::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|sin_pos_tech::#return_value| Real) ) Bool
+  (let ((?def316 |sin_pos_tech::#return_value|))
+  (let ((?def317 (= (|_sin#0| |sin_pos_tech::a|) ?def316)))
+  (let ((?def318 (or (not (and (< 0 |sin_pos_tech::a|) (< |sin_pos_tech::a| 2))) (< 0 ?def316))))
+  (let ((?def319 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def320 (and ?def318 ?def319)))
+  (let ((?def321 (and ?def317 ?def320)))
+
+?def321
+)))))))
+
+(define-fun |sin_sin2_cos2_1#0| ((|sin_sin2_cos2_1::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|sin_sin2_cos2_1::#return_value| Real) ) Bool
+  (let ((?def322 |sin_sin2_cos2_1::#return_value|))
+  (let ((?def323 (= (|_sin#0| |sin_sin2_cos2_1::a|) ?def322)))
+  (let ((?def324 (= 1 (+ (* (|_cos#0| |sin_sin2_cos2_1::a|) (|_cos#0| |sin_sin2_cos2_1::a|)) (* ?def322 ?def322)))))
+  (let ((?def325 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def326 (and ?def324 ?def325)))
+  (let ((?def327 (and ?def323 ?def326)))
+
+?def327
+)))))))
+
+(define-fun |sin_sin_2a#0| ((|sin_sin_2a::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|sin_sin_2a::#return_value| Real) ) Bool
+  (let ((?def328 |sin_sin_2a::#return_value|))
+  (let ((?def329 (= (|_sin#0| |sin_sin_2a::a|) ?def328)))
+  (let ((?def330 (= (|_sin#0| (* 2 |sin_sin_2a::a|)) (* 2 (* ?def328 (|_cos#0| |sin_sin_2a::a|))))))
+  (let ((?def331 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def332 (and ?def330 ?def331)))
+  (let ((?def333 (and ?def329 ?def332)))
+
+?def333
+)))))))
+
+(define-fun |sin_cos_bound_1#0| ((|sin_cos_bound_1::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|sin_cos_bound_1::#return_value| Real) ) Bool
+  (let ((?def334 |sin_cos_bound_1::#return_value|))
+  (let ((?def335 (= (|_sin#0| |sin_cos_bound_1::a|) ?def334)))
+  (let ((?def336 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def338 (and (< 0 |sin_cos_bound_1::a|) (< |sin_cos_bound_1::a| 1))))
+  (let ((?def339 (* |sin_cos_bound_1::a| (|_cos#0| |sin_cos_bound_1::a|))))
+  (let ((?def340 (or (not ?def338) (and (< 0 ?def339) (and (< ?def339 ?def334) (< ?def334 |sin_cos_bound_1::a|))))))
+  (let ((?def341 (and ?def340 ?def336)))
+  (let ((?def342 (and ?def335 ?def341)))
+
+?def342
+)))))))))
+
+(define-fun |guard_else_0_facts#0| ((|guard_else_0_facts::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_else_0_facts::#return_value| Real) ) Bool
+  (let ((?def99001  |guard_else_0_facts::#return_value|))
+  (let ((?def99002  (= (|_sin#0| |guard_else_0_facts::a|) ?def99001)))
+  (let ((?def99003 (and (not (= 0 ?def99001)) (not (= |guard_else_0_facts::a| (* 3.14159265358979323846 |symex::nondet::sin_1|))))))
+  (let ((?def99004 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def99005 (and ?def99002 ?def99004)))
+  (let ((?def99006 (and ?def99003 ?def99005)))
+
+?def99006
+)))))))
+
+(define-fun |guard_else_hald_pi#0| ((|guard_else_hald_pi::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_else_hald_pi::#return_value| Real) ) Bool
+  (let ((?def99011  |guard_else_hald_pi::#return_value|))
+  (let ((?def99012  (= (|_sin#0| |guard_else_hald_pi::a|) ?def99011)))
+  (let ((?def99013 (or (< |guard_else_hald_pi::a| (- (/ |symex::M_PI| 2))) (> |guard_else_hald_pi::a| (* 3 (/ |symex::M_PI| 2))))))
+  (let ((?def99014 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def99015 (and ?def99012 ?def99014)))
+  (let ((?def99016 (and ?def99013 ?def99015)))
+
+?def99016
+)))))))
+
+(define-fun |guard_last#0| ((|guard_last::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_last::#return_value| Real) ) Bool
+  (let ((?def99021  |guard_last::#return_value|))
+  (let ((?def99022  (= (|_sin#0| |guard_last::a|) ?def99021)))
+  (let ((?def99023 (or (< |guard_last::a| (- (/ |symex::M_PI| 2))) (> |guard_last::a| (* 3 (/ |symex::M_PI| 2))))))
+  (let ((?def99024 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def99025 (and ?def99022 ?def99024)))
+  (let ((?def99026 (and ?def99023 ?def99025)))
+
+?def99026
+)))))))
+
+(define-fun |guard_x__eq_0#0| ((|guard_x__eq_0::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_x__eq_0::#return_value| Real) ) Bool
+  (let ((?def99031  |guard_x__eq_0::#return_value|))
+  (let ((?def99032  (= (|_sin#0| |guard_x__eq_0::a|) ?def99031)))
+  (let ((?def99033 (= 0 |guard_x__eq_0::a|)))
+  (let ((?def99034 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def99035 (and ?def99032 ?def99034)))
+  (let ((?def99036 (and ?def99033 ?def99035)))
+
+?def99036
+)))))))
+
+(define-fun |guard_x_eq_2pi#0| ((|guard_x_eq_2pi::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_x_eq_2pi::#return_value| Real) ) Bool
+  (let ((?def99041  |guard_x_eq_2pi::#return_value|))
+  (let ((?def99042  (= (|_sin#0| |guard_x_eq_2pi::a|) ?def99041)))
+  (let ((?def99043 (= (* 2 |symex::M_PI|) |guard_x_eq_2pi::a|)))
+  (let ((?def99044 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def99045 (and ?def99042 ?def99044)))
+  (let ((?def99046 (and ?def99043 ?def99045)))
+
+?def99046
+)))))))
+
+(define-fun |guard_sin_lt_var#0| ((|guard_sin_lt_var::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_sin_lt_var::#return_value| Real) ) Bool
+  (let ((?def99051  |guard_sin_lt_var::#return_value|))
+  (let ((?def99052  (= (|_sin#0| |guard_sin_lt_var::a|) ?def99051)))
+  (let ((?def99053 (and (< (- |symex::M_PI|) |guard_sin_lt_var::a|) (< |guard_sin_lt_var::a| 0))))
+  (let ((?def99054 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def99055 (and ?def99052 ?def99054)))
+  (let ((?def99056 (and ?def99053 ?def99055)))
+
+?def99056
+)))))))
+
+(define-fun |guard_sinx_0#0| ((|guard_sinx_0::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_sinx_0::#return_value| Real) ) Bool
+  (let ((?def99061  |guard_sinx_0::#return_value|))
+  (let ((?def99062  (= (|_sin#0| |guard_sinx_0::a|) ?def99061)))
+  (let ((?def99063 (= ?def99061 0 )))
+  (let ((?def99064 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def99065 (and ?def99062 ?def99064)))
+  (let ((?def99066 (and ?def99063 ?def99065)))
+
+?def99066
+)))))))
+
+(define-fun |guard_sinx0_0_le_x_le_2pi#0| ((|guard_sinx0_0_le_x_le_2pi::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_sinx0_0_le_x_le_2pi::#return_value| Real) ) Bool
+  (let ((?def99071  |guard_sinx0_0_le_x_le_2pi::#return_value|))
+  (let ((?def99072  (= (|_sin#0| |guard_sinx0_0_le_x_le_2pi::a|) ?def99071)))
+  (let ((?def99073 (and (<= 0 |guard_sinx0_0_le_x_le_2pi::a|) (<= |guard_sinx0_0_le_x_le_2pi::a| (* 2 |symex::M_PI|)))))
+  (let ((?def99074 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def99075 (and ?def99072 ?def99074)))
+  (let ((?def99076 (and ?def99073 ?def99075)))
+
+?def99076
+)))))))
+
+(define-fun |guard_sinx0_x_lt_0_or_x_gt_2pi#0| ((|guard_sinx0_x_lt_0_or_x_gt_2pi::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_sinx0_x_lt_0_or_x_gt_2pi::#return_value| Real) ) Bool
+  (let ((?def99081  |guard_sinx0_x_lt_0_or_x_gt_2pi::#return_value|))
+  (let ((?def99082  (= (|_sin#0| |guard_sinx0_x_lt_0_or_x_gt_2pi::a|) ?def99081)))
+  (let ((?def99083 (not (and (<= 0 |guard_sinx0_x_lt_0_or_x_gt_2pi::a|) (<= |guard_sinx0_x_lt_0_or_x_gt_2pi::a| (* 2 |symex::M_PI|))))))
+  (let ((?def99084 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def99085 (and ?def99082 ?def99084)))
+  (let ((?def99086 (and ?def99083 ?def99085)))
+
+?def99086
+)))))))
+
+(define-fun |guard_x_eq_k_pi#0| ((|guard_x_eq_k_pi::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_x_eq_k_pi::#return_value| Real) ) Bool
+  (let ((?def99091  |guard_x_eq_k_pi::#return_value|))
+  (let ((?def99092  (= (|_sin#0| |guard_x_eq_k_pi::a|) ?def99091)))
+  (let ((?def99093 (= |guard_x_eq_k_pi::a| (* 3.14159265358979323846 |symex::nondet::sin_1|))))
+  (let ((?def99094 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def99095 (and ?def99092 ?def99094)))
+  (let ((?def99096 (and ?def99093 ?def99095)))
+
+?def99096
+)))))))
+
+(define-fun |guard_sin_eq_O_2PI_1#0| ((|guard_sin_eq_O_2PI_1::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_sin_eq_O_2PI_1::#return_value| Real) ) Bool
+  (let ((?def99101  |guard_sin_eq_O_2PI_1::#return_value|))
+  (let ((?def99102  (= (|_sin#0| |guard_sin_eq_O_2PI_1::a|) ?def99101)))
+  (let ((?def99103 (and (<= 0 |guard_sin_eq_O_2PI_1::a|) (<= |guard_sin_eq_O_2PI_1::a| (* 2 |symex::M_PI|)))))
+  (let ((?def99104 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def99105 (and ?def99102 ?def99104)))
+  (let ((?def99106 (and ?def99103 ?def99105)))
+
+?def99106
+)))))))
+
+(define-fun |guard_not_sin_eq_O_2PI_1#0| ((|guard_not_sin_eq_O_2PI_1::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_not_sin_eq_O_2PI_1::#return_value| Real) ) Bool
+  (let ((?def99111  |guard_not_sin_eq_O_2PI_1::#return_value|))
+  (let ((?def99112  (= (|_sin#0| |guard_not_sin_eq_O_2PI_1::a|) ?def99111)))
+  (let ((?def99113 (not (and (<= 0 |guard_not_sin_eq_O_2PI_1::a|) (<= |guard_not_sin_eq_O_2PI_1::a| (* 2 |symex::M_PI|))))))
+  (let ((?def99114 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def99115 (and ?def99112 ?def99114)))
+  (let ((?def99116 (and ?def99113 ?def99115)))
+
+?def99116
+)))))))
+
+(define-fun |guard_x_eq_pi#0| ((|guard_x_eq_pi::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_x_eq_pi::#return_value| Real) ) Bool
+  (let ((?def99121  |guard_x_eq_pi::#return_value|))
+  (let ((?def99122  (= (|_sin#0| |guard_x_eq_pi::a|) ?def99121)))
+  (let ((?def99123 (= |guard_x_eq_pi::a| |symex::M_PI|)))
+  (let ((?def99124 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def99125 (and ?def99122 ?def99124)))
+  (let ((?def99126 (and ?def99123 ?def99125)))
+
+?def99126
+)))))))
+
+;; Can be a hueristic when sin(x) won't consider it's own var as a candidate
+(define-fun |guard_x_eq_y_sin#0| ((|guard_x_eq_y_sin::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_x_eq_y_sin::#return_value| Real) ) Bool
+    (let ((?def99131    |guard_x_eq_y_sin::#return_value|))
+    (let ((?def99132    (= (|_sin#0| |guard_x_eq_y_sin::a|) ?def99131)))
+    (let ((?def991333  (= |guard_x_eq_y_sin::a| (/ |symex::nondet::sin_18| 2))))
+    (let ((?def991334  (= |guard_x_eq_y_sin::a| (* 2 |symex::nondet::sin_18|))))
+    (let ((?def991335  (= |guard_x_eq_y_sin::a| |symex::nondet::sin_18|)))
+    (let ((?def99133   (or ?def991333 (or ?def991334 ?def991335))))
+    (let ((?def99134   (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def99135   (and ?def99132 ?def99134)))
+    (let ((?def99139   (and ?def99135 ?def99133)))
+
+?def99139
+))))))))))
+
+(define-fun |guard_x_gt_2pi#0| ((|guard_x_gt_2pi::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_x_gt_2pi::#return_value| Real) ) Bool
+  (let ((?def99141  |guard_x_gt_2pi::#return_value|))
+  (let ((?def99142  (= (|_sin#0| |guard_x_gt_2pi::a|) ?def99141)))
+  (let ((?def99143 (> |guard_x_gt_2pi::a| (* 2 |symex::M_PI|))))
+  (let ((?def99144 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def99145 (and ?def99142 ?def99144)))
+  (let ((?def99146 (and ?def99143 ?def99145)))
+
+?def99146
+)))))))
+
+(define-fun |guard_x_in_0_1#0| ((|guard_x_in_0_1::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_x_in_0_1::#return_value| Real) ) Bool
+  (let ((?def99151  |guard_x_in_0_1::#return_value|))
+  (let ((?def99152  (= (|_sin#0| |guard_x_in_0_1::a|) ?def99151)))
+  (let ((?def99153 (and (< 0 |guard_x_in_0_1::a|) (< |guard_x_in_0_1::a| 1))))
+  (let ((?def99154 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def99155 (and ?def99152 ?def99154)))
+  (let ((?def99156 (and ?def99153 ?def99155)))
+
+?def99156
+)))))))
+
+(define-fun |guard_sin_ge_0#0| ((|guard_sin_ge_0::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_sin_ge_0::#return_value| Real) ) Bool
+  (let ((?def99161  |guard_sin_ge_0::#return_value|))
+  (let ((?def99162  (= (|_sin#0| |guard_sin_ge_0::a|) ?def99161)))
+  (let ((?def99163 (and (< 0 |guard_sin_ge_0::a|) (< |guard_sin_ge_0::a| |symex::M_PI|))))
+  (let ((?def99164 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def99165 (and ?def99162 ?def99164)))
+  (let ((?def99166 (and ?def99163 ?def99165)))
+
+?def99166
+)))))))
+
+(define-fun |guard_sin_le_0#0| ((|guard_sin_le_0::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_sin_le_0::#return_value| Real) ) Bool
+  (let ((?def99171  |guard_sin_le_0::#return_value|))
+  (let ((?def99172  (= (|_sin#0| |guard_sin_le_0::a|) ?def99171)))
+  (let ((?def99173 (and (< |symex::M_PI| |guard_sin_le_0::a|) (< |guard_sin_le_0::a| (* 2 |symex::M_PI|)))))
+  (let ((?def99174 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def99175 (and ?def99172 ?def99174)))
+  (let ((?def99176 (and ?def99173 ?def99175)))
+
+?def99176
+)))))))
+
+(define-fun |guard_x_lt_minus_pi#0| ((|guard_x_lt_minus_pi::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_x_lt_minus_pi::#return_value| Real) ) Bool
+  (let ((?def99181  |guard_x_lt_minus_pi::#return_value|))
+  (let ((?def99182  (= (|_sin#0| |guard_x_lt_minus_pi::a|) ?def99181)))
+  (let ((?def99183 (< |guard_x_lt_minus_pi::a| (- |symex::M_PI|))))
+  (let ((?def99184 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def99185 (and ?def99182 ?def99184)))
+  (let ((?def99186 (and ?def99183 ?def99185)))
+
+?def99186
+)))))))
+
+;; Only if other variables are candidates
+(define-fun |guard_x_neq_y_sin#0| ((|guard_x_neq_y_sin::a| Real) (|guard_x_neq_y_sin::b| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_x_neq_y_sin::#return_value| Real) ) Bool
+    (let ((?def501  |guard_x_neq_y_sin::#return_value|))
+    (let ((?def502  (= (|_sin#0| |guard_x_neq_y_sin::a|) ?def501)))
+    (let ((?def503 (= |guard_x_neq_y_sin::a| (/ |guard_x_neq_y_sin::b| 2))))
+    (let ((?def504 (or (= |guard_x_neq_y_sin::a| (* 2 |guard_x_neq_y_sin::b|)) (= |guard_x_neq_y_sin::a| |guard_x_neq_y_sin::b|))))
+    (let ((?def505  (not (or ?def503 ?def504))))
+    (let ((?def506   (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def507   (and ?def502 ?def505)))
+    (let ((?def508    (and ?def506 ?def507)))
+
+?def508
+)))))))))
+
+(define-fun |guard_x_notin_0_1#0| ((|guard_x_notin_0_1::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_x_notin_0_1::#return_value| Real) ) Bool
+  (let ((?def99201  |guard_x_notin_0_1::#return_value|))
+  (let ((?def99202  (= (|_sin#0| |guard_x_notin_0_1::a|) ?def99201)))
+  (let ((?def99203 (not (and (< 0 |guard_x_notin_0_1::a|) (< |guard_x_notin_0_1::a| 1)))))
+  (let ((?def99204 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def99205 (and ?def99202 ?def99204)))
+  (let ((?def99206 (and ?def99203 ?def99205)))
+
+?def99206
+)))))))
+
+(define-fun |guard_x_y_in_half_pi_3_2_pi#0| ((|guard_x_y_in_half_pi_3_2_pi::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_x_y_in_half_pi_3_2_pi::#return_value| Real) ) Bool
+  (let ((?def99211  |guard_x_y_in_half_pi_3_2_pi::#return_value|))
+  (let ((?def99212  (= (|_sin#0| |guard_x_y_in_half_pi_3_2_pi::a|) ?def99211)))
+  (let ((?def99213 (and (< |guard_x_y_in_half_pi_3_2_pi::a| (/ |symex::M_PI| 2)) (<= |guard_x_y_in_half_pi_3_2_pi::a| (* 3 (/ |symex::M_PI| 2))))))
+  (let ((?def99214 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def99215 (and ?def99212 ?def99214)))
+  (let ((?def99216 (and ?def99213 ?def99215)))
+
+?def99216
+)))))))
+
+
+(define-fun |guard_x_y_in_half_pi_3_2_pi_last#0| ((|guard_x_y_in_half_pi_3_2_pi_last::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_x_y_in_half_pi_3_2_pi_last::#return_value| Real) ) Bool
+  (let ((?def99221  |guard_x_y_in_half_pi_3_2_pi_last::#return_value|))
+  (let ((?def99222  (= (|_sin#0| |guard_x_y_in_half_pi_3_2_pi_last::a|) ?def99221)))
+  (let ((?def99223 (and (< (/ |symex::M_PI| 2) |guard_x_y_in_half_pi_3_2_pi_last::a|) (<= |guard_x_y_in_half_pi_3_2_pi_last::a| (* 3 (/ |symex::M_PI| 2))))))
+  (let ((?def99224 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def99225 (and ?def99222 ?def99224)))
+  (let ((?def99226 (and ?def99223 ?def99225)))
+
+?def99226
+)))))))
+
+(define-fun |guard_x_y_in_minus_plus_half_pi#0| ((|guard_x_y_in_minus_plus_half_pi::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_x_y_in_minus_plus_half_pi::#return_value| Real) ) Bool
+  (let ((?def99231  |guard_x_y_in_minus_plus_half_pi::#return_value|))
+  (let ((?def99232  (= (|_sin#0| |guard_x_y_in_minus_plus_half_pi::a|) ?def99231)))
+  (let ((?def99233 (and (<= (- (/ |symex::M_PI| 2)) |guard_x_y_in_minus_plus_half_pi::a|) (<= |guard_x_y_in_minus_plus_half_pi::a| (/ |symex::M_PI| 2)))))
+  (let ((?def99234 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def99235 (and ?def99232 ?def99234)))
+  (let ((?def99236 (and ?def99233 ?def99235)))
+
+?def99236
+)))))))
+
+(define-fun |guard_x_y_in_minus_plus_half_pi_last#0| ((|guard_x_y_in_minus_plus_half_pi_last::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_x_y_in_minus_plus_half_pi_last::#return_value| Real) ) Bool
+  (let ((?def99241  |guard_x_y_in_minus_plus_half_pi_last::#return_value|))
+  (let ((?def99242  (= (|_sin#0| |guard_x_y_in_minus_plus_half_pi_last::a|) ?def99241)))
+  (let ((?def99243 (and (<= (- (/ |symex::M_PI| 2)) |guard_x_y_in_minus_plus_half_pi_last::a|) (<= |guard_x_y_in_minus_plus_half_pi_last::a| (/ |symex::M_PI| 2)))))
+  (let ((?def99244 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def99245 (and ?def99242 ?def99244)))
+  (let ((?def99246 (and ?def99243 ?def99245)))
+
+?def99246
+)))))))
+
+(define-fun |guard_x_eq_minus_pi#0| ((|guard_x_eq_minus_pi::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_x_eq_minus_pi::#return_value| Real) ) Bool
+  (let ((?def99251  |guard_x_eq_minus_pi::#return_value|))
+  (let ((?def99252  (= (|_sin#0| |guard_x_eq_minus_pi::a|) ?def99251)))
+  (let ((?def99253 (= (- |symex::M_PI|) |guard_x_eq_minus_pi::a|)))
+  (let ((?def99254 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def99255 (and ?def99252 ?def99254)))
+  (let ((?def99256 (and ?def99253 ?def99255)))
+
+?def99256
+)))))))
+
+(define-fun |sin_cos_shift_wiki2#0| ((|sin_cos_shift_wiki2::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|sin_cos_shift_wiki2::#return_value| Real) ) Bool
+  (let ((?def166 |sin_cos_shift_wiki2::#return_value|))
+  (let ((?def167 (= (|_sin#0| |sin_cos_shift_wiki2::a|) ?def166)))
+  (let ((?def168 (= (- ?def166) (|_cos#0| (+ |sin_cos_shift_wiki2::a| |symex::M_PI_2|)))))
+  (let ((?def169 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def170 (and ?def168 ?def169)))
+  (let ((?def171 (and ?def167 ?def170)))
+
+?def171
+)))))))
+
+(define-fun |null_final_sin#0| ((|null_final_sin::a| Real) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|null_final_sin::#return_value| Real) ) Bool
+  (let ((?def99271  |null_final_sin::#return_value|))
+  (let ((?def99272  (= (|_sin#0| |null_final_sin::a|) ?def99271)))
+  (let ((?def99274 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+  (let ((?def99275 (and ?def99272 ?def99274)))
+
+?def99275
+)))))

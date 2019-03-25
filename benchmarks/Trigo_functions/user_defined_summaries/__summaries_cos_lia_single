@@ -1,0 +1,841 @@
+(declare-fun |_sin#0| (Int) Int)
+(declare-fun |_cos#0| (Int) Int)
+(declare-fun uns_cos (Int) Int)
+(declare-fun uns_sin (Int) Int)
+(declare-fun |symex::nondet::cos_0| () Int)
+(declare-fun |symex::nondet::cos_1| () Int)
+(declare-fun |symex::nondet::cos_2| () Int)
+(declare-fun |symex::nondet::cos_3| () Int)
+(declare-fun |symex::nondet::cos_4| () Int)
+(declare-fun |symex::nondet::cos_5| () Int)
+(declare-fun |symex::nondet::cos_6| () Int)
+(declare-fun |symex::nondet::cos_7| () Int)
+(declare-fun |symex::nondet::cos_8| () Int)
+(declare-fun |symex::nondet::cos_9| () Int)
+(declare-fun |symex::nondet::cos_10| () Int)
+(declare-fun |symex::nondet::cos_11| () Int)
+(declare-fun |symex::nondet::cos_12| () Int)
+(declare-fun |symex::nondet::cos_13| () Int)
+(declare-fun |symex::nondet::cos_14| () Int)
+(declare-fun |symex::nondet::cos_15| () Int)
+(declare-fun |symex::nondet::cos_16| () Int)
+(declare-fun |symex::nondet::cos_17| () Int)
+(declare-fun |symex::nondet::cos_18| () Int)
+(declare-fun |symex::M_PI| () Int)
+(declare-fun |symex::M_PI_4| () Int)
+(declare-fun |symex::M_PI_2| () Int)
+(declare-fun |symex::M_SQRT2| () Int)
+(declare-fun |symex::M_1_PI| () Int)
+(declare-fun |symex::M_2_PI| () Int)
+(declare-fun |symex::M_2_SQRTPI| () Int)
+(declare-fun |symex::M_E| () Int)
+(declare-fun |symex::M_LN10| () Int)
+(declare-fun |symex::M_LN2| () Int)
+(declare-fun |symex::M_LOG10E| () Int)
+(declare-fun |symex::M_LOG2E| () Int)
+(declare-fun |symex::M_SQRT1_2| () Int)
+(declare-fun uns_* (Int Int) Int)
+(declare-fun uns_/ (Int Int) Int)
+
+(define-fun |cos_def#0| ((|cos_def::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|cos_def::#return_value| Int) ) Bool
+    (let ((?def172 |cos_def::#return_value|))
+    (let ((?def173  (= (|_cos#0| |cos_def::a|) ?def172)))
+    (let ((?def174
+(and	 (<= |symex::M_PI| 4)
+(and	 (= (- 1) (|_cos#0| |symex::M_PI|))
+(and	 (= (uns_/ |symex::M_SQRT2| 2) (|_cos#0| (* 7 |symex::M_PI_4|)))
+(and	 (= (uns_/ |symex::M_SQRT2| 2) (|_cos#0| (uns_/ |symex::M_PI| 4)))
+(and	 (= (uns_/ |symex::M_SQRT2| 2) (|_cos#0| |symex::M_PI_4|))
+(and	 (= (uns_/ |symex::M_SQRT2| 2) (|_sin#0| (* 3 |symex::M_PI_4|)))
+(and	 (= (uns_/ |symex::M_SQRT2| 2) (|_sin#0| (uns_/ |symex::M_PI| 4)))
+(and	 (= (uns_/ |symex::M_SQRT2| 2) (|_sin#0| |symex::M_PI_4|))
+(and	 (= (- 1) (|_sin#0| (* 3 |symex::M_PI_2|)))
+(and	 (= 0 (|_cos#0| (* 3 |symex::M_PI_2|)))
+(and	 (= 0 (|_cos#0| (uns_/ |symex::M_PI| 2)))
+(and	 (= 0 (|_cos#0| |symex::M_PI_2|))
+(and	 (= 0 (|_sin#0| (* 2 |symex::M_PI|)))
+(and	 (= 0 (|_sin#0| |symex::M_PI|))
+(and	 (= 0 (|_sin#0| 0))
+(and	 (= 1 (|_cos#0| (* 2 |symex::M_PI|)))
+(and	 (= 1 (|_cos#0| 0))
+(and	 (= 1 (|_sin#0| |symex::M_PI_2|))
+(and	 (> |symex::M_PI| 0)
+(and	 (and	 (not (= |symex::M_PI| 0))
+(and	 (= ?def172 (|_cos#0| |cos_def::a|)) (= ?def172 (uns_cos |cos_def::a|))))))))))))))))))))))))))
+    (let ((?def175 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def176 (and ?def174 ?def175)))
+    (let ((?def177  (and ?def173 ?def176)))
+
+?def177
+)))))))
+
+(define-fun |cos_2a#0| ((|cos_2a::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|cos_2a::#return_value| Int) ) Bool
+    (let ((?def100 |cos_2a::#return_value|))
+    (let ((?def101  (= (|_cos#0| |cos_2a::a|) ?def100)))
+    (let ((?def102 (= (|_cos#0| (* 2|cos_2a::a|)) (- (uns_* ?def100 ?def100) (uns_* (|_sin#0| |cos_2a::a|) (|_sin#0| |cos_2a::a|))))))
+    (let ((?def103 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def104 (and ?def102 ?def103)))
+    (let ((?def105  (and ?def101 ?def104)))
+
+?def105
+)))))))
+
+(define-fun |cos_2a_cos#0| ((|cos_2a_cos::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|cos_2a_cos::#return_value| Int) ) Bool
+    (let ((?def106 |cos_2a_cos::#return_value|))
+    (let ((?def107  (= (|_cos#0| |cos_2a_cos::a|) ?def106)))
+    (let ((?def1081 (= (|_cos#0| (* 2|cos_2a_cos::a|)) (- (* 2(uns_* ?def106 ?def106)) 1))))
+    (let ((?def1082 (= (* 2(uns_* ?def106 ?def106)) (uns_* (* 2?def106) ?def106))))
+    (let ((?def108 (and ?def1081 ?def1082)))
+    (let ((?def109 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def110 (and ?def108 ?def109)))
+    (let ((?def111  (and ?def107 ?def110)))
+
+?def111
+)))))))))
+
+(define-fun |cos_2a_sin#0| ((|cos_2a_sin::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|cos_2a_sin::#return_value| Int) ) Bool
+    (let ((?def112 |cos_2a_sin::#return_value|))
+    (let ((?def113  (= (|_cos#0| |cos_2a_sin::a|) ?def112)))
+    (let ((?def114 (= ?def112 (- 1 (uns_* 2 (uns_* (|_sin#0| (uns_/ |cos_2a_sin::a| 2)) (|_sin#0| (uns_/ |cos_2a_sin::a| 2))))))))
+    (let ((?def115 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def116 (and ?def114 ?def115)))
+    (let ((?def117  (and ?def113 ?def116)))
+
+?def117
+)))))))
+
+(define-fun |cos_2sin_shq#0| ((|cos_2sin_shq::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|cos_2sin_shq::#return_value| Int) ) Bool
+    (let ((?def118 |cos_2sin_shq::#return_value|))
+    (let ((?def119  (= (|_cos#0| |cos_2sin_shq::a|) ?def118)))
+    (let ((?def120 (= ?def118 (|_sin#0| (+ |cos_2sin_shq::a| |symex::M_PI_2|)))))
+    (let ((?def121 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def122 (and ?def120 ?def121)))
+    (let ((?def123  (and ?def119 ?def122)))
+
+?def123
+)))))))
+
+(define-fun |cos_3x#0| ((|cos_3x::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|cos_3x::#return_value| Int) ) Bool
+    (let ((?def130 |cos_3x::#return_value|))
+    (let ((?def131  (= (|_cos#0| |cos_3x::a|) ?def130)))
+    (let ((?def1320 (= (|_cos#0| (* 3|cos_3x::a|)) (- (* 4(uns_* ?def130 (uns_* ?def130 ?def130))) (* 3?def130)))))
+    (let ((?def1321 (= (* 4(uns_* ?def130 (uns_* ?def130 ?def130))) (uns_* (* 4?def130) (uns_* ?def130 ?def130)))))
+    (let ((?def1322 (= (* 4(uns_* ?def130 (uns_* ?def130 ?def130))) (uns_* (uns_* ?def130 ?def130) (* 4?def130)))))
+    (let ((?def1323 (= (* 4(uns_* ?def130 (uns_* ?def130 ?def130))) (uns_* (uns_* (* 4?def130) ?def130) ?def130))))
+    (let ((?def1324 (= (* 4(uns_* ?def130 (uns_* ?def130 ?def130))) (uns_* (uns_* ?def130 (* 4?def130)) ?def130))))
+    (let ((?def1325 (= (* 4(uns_* ?def130 (uns_* ?def130 ?def130))) (uns_* ?def130 (uns_* (* 4?def130) ?def130)))))
+    (let ((?def1326 (= (* 4(uns_* ?def130 (uns_* ?def130 ?def130))) (uns_* ?def130 (uns_* ?def130 (* 4?def130))))))
+    (let ((?def1327 (and ?def1320 ?def1321)))
+    (let ((?def1328 (and ?def1322 ?def1323)))
+    (let ((?def1329 (and ?def1324 ?def1325)))
+    (let ((?def13210 (and ?def1326 ?def1327)))
+    (let ((?def13211 (and ?def1328 ?def1329)))
+    (let ((?def132 (and ?def13210 ?def13211)))
+    (let ((?def133 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def134 (and ?def132 ?def133)))
+    (let ((?def135  (and ?def131 ?def134)))
+
+?def135
+)))))))))))))))))))
+
+(define-fun |cos_PI_2_aux#0| ((|cos_PI_2_aux::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|cos_PI_2_aux::#return_value| Int) ) Bool
+    (let ((?def136 |cos_PI_2_aux::#return_value|))
+    (let ((?def137  (= (|_cos#0| |cos_PI_2_aux::a|) ?def136)))
+    (let ((?def138 (or (not (and (<= (uns_/ 7 8) |cos_PI_2_aux::a|) (<= |cos_PI_2_aux::a| (uns_/ 7 4)))) (= 0 (- ?def136)))))
+    (let ((?def139 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def140 (and ?def138 ?def139)))
+    (let ((?def141  (and ?def137 ?def140)))
+
+?def141
+)))))))
+
+(define-fun |cos_bound#0| ((|cos_bound::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|cos_bound::#return_value| Int) ) Bool
+    (let ((?def142 |cos_bound::#return_value|))
+    (let ((?def143  (= (|_cos#0| |cos_bound::a|) ?def142)))
+    (let ((?def144 (and (<= (- 1) ?def142) (<= ?def142 1))))
+    (let ((?def145 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def146 (and ?def144 ?def145)))
+    (let ((?def147  (and ?def143 ?def146)))
+
+?def147
+)))))))
+
+(define-fun |cos_decr_0#0| ((|cos_decr_0::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|cos_decr_0::#return_value| Int) ) Bool
+    (let ((?def148 |cos_decr_0::#return_value|))
+    (let ((?def149  (= (|_cos#0| |cos_decr_0::a|) ?def148)))
+    (let ((?def150 (or (not (and (and (<= 0 |cos_decr_0::a|) (<= |cos_decr_0::a| |symex::M_PI|))     (and (<= 0 |symex::nondet::cos_3|) (<= |symex::nondet::cos_3| |symex::M_PI|))))(and (or (not (<= ?def148 (uns_cos |symex::nondet::cos_3|))) (<= |symex::nondet::cos_3| |cos_decr_0::a|))     (or (not (<= (uns_cos |symex::nondet::cos_3|) ?def148)) (<= |cos_decr_0::a| |symex::nondet::cos_3|))))))
+    (let ((?def151 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def152 (and ?def150 ?def151)))
+    (let ((?def153  (and ?def149 ?def152)))
+
+?def153
+)))))))
+
+(define-fun |cos_decr_1#0| ((|cos_decr_1::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|cos_decr_1::#return_value| Int) ) Bool
+    (let ((?def154 |cos_decr_1::#return_value|))
+    (let ((?def155  (= (|_cos#0| |cos_decr_1::a|) ?def154)))
+    (let ((?def156 (or (not (and (and (<= 0 |cos_decr_1::a|) (<= |cos_decr_1::a| |symex::M_PI|))     (and (<= 0 |symex::nondet::cos_4|) (<= |symex::nondet::cos_4| |symex::M_PI|))))(and (or (not (<= |cos_decr_1::a| |symex::nondet::cos_4|)) (<= (uns_cos |symex::nondet::cos_4|) ?def154))     (or (not (<= |symex::nondet::cos_4| |cos_decr_1::a|)) (<= ?def154 (uns_cos |symex::nondet::cos_4|)))))))
+    (let ((?def157 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def158 (and ?def156 ?def157)))
+    (let ((?def159  (and ?def155 ?def158)))
+
+?def159
+)))))))
+
+(define-fun |cos_decreasing_0#0| ((|cos_decreasing_0::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|cos_decreasing_0::#return_value| Int) ) Bool
+    (let ((?def160 |cos_decreasing_0::#return_value|))
+    (let ((?def161  (= (|_cos#0| |cos_decreasing_0::a|) ?def160)))
+    (let ((?def162 (or (not (and (and (<= 0 |cos_decreasing_0::a|) (<= |cos_decreasing_0::a| |symex::M_PI|))     (and (<= 0 |symex::nondet::cos_5|) (<= |symex::nondet::cos_5| |symex::M_PI|))))(and (or (not (< ?def160 (uns_cos |symex::nondet::cos_5|))) (< |symex::nondet::cos_5| |cos_decreasing_0::a|))     (or (not (< (uns_cos |symex::nondet::cos_5|) ?def160)) (< |cos_decreasing_0::a| |symex::nondet::cos_5|))))))
+    (let ((?def163 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def164 (and ?def162 ?def163)))
+    (let ((?def165  (and ?def161 ?def164)))
+
+?def165
+)))))))
+
+(define-fun |cos_decreasing_1#0| ((|cos_decreasing_1::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|cos_decreasing_1::#return_value| Int) ) Bool
+    (let ((?def166 |cos_decreasing_1::#return_value|))
+    (let ((?def167  (= (|_cos#0| |cos_decreasing_1::a|) ?def166)))
+    (let ((?def168 (or (not (and (and (<= 0 |cos_decreasing_1::a|) (<= |cos_decreasing_1::a| |symex::M_PI|))     (and (<= 0 |symex::nondet::cos_6|) (<= |symex::nondet::cos_6| |symex::M_PI|))))(and (or (not (< |cos_decreasing_1::a| |symex::nondet::cos_6|)) (< (uns_cos |symex::nondet::cos_6|) ?def166))     (or (not (< |symex::nondet::cos_6| |cos_decreasing_1::a|)) (< ?def166 (uns_cos |symex::nondet::cos_6|)))))))
+    (let ((?def169 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def170 (and ?def168 ?def169)))
+    (let ((?def171  (and ?def167 ?def170)))
+
+?def171
+)))))))
+
+(define-fun |cos_eq_0_0#0| ((|cos_eq_0_0::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|cos_eq_0_0::#return_value| Int) ) Bool
+    (let ((?def178 |cos_eq_0_0::#return_value|))
+    (let ((?def179  (= (|_cos#0| |cos_eq_0_0::a|) ?def178)))
+    (let ((?def180 (or (not (= 0 ?def178)) (= |cos_eq_0_0::a| (+ (* |symex::M_PI| |symex::nondet::cos_1|) (uns_/ |symex::M_PI| 2))))))
+    (let ((?def181 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def182 (and ?def180 ?def181)))
+    (let ((?def183  (and ?def179 ?def182)))
+
+?def183
+)))))))
+
+(define-fun |cos_eq_0_1#0| ((|cos_eq_0_1::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|cos_eq_0_1::#return_value| Int) ) Bool
+    (let ((?def184 |cos_eq_0_1::#return_value|))
+    (let ((?def185  (= (|_cos#0| |cos_eq_0_1::a|) ?def184)))
+    (let ((?def186 (or (not (= |cos_eq_0_1::a| (+ (* |symex::M_PI| |symex::nondet::cos_2|) (uns_/ |symex::M_PI| 2)))) (= 0 ?def184))))
+    (let ((?def187 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def188 (and ?def186 ?def187)))
+    (let ((?def189  (and ?def185 ?def188)))
+
+?def189
+)))))))
+
+(define-fun |cos_eq_0_2PI_0#0| ((|cos_eq_0_2PI_0::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|cos_eq_0_2PI_0::#return_value| Int) ) Bool
+    (let ((?def190 |cos_eq_0_2PI_0::#return_value|))
+    (let ((?def191  (= (|_cos#0| |cos_eq_0_2PI_0::a|) ?def190)))
+    (let ((?def192 (or (not (and (and (<= 0 |cos_eq_0_2PI_0::a|) (<= |cos_eq_0_2PI_0::a| (* 2|symex::M_PI|))) (= 0 ?def190))) (or (= |symex::M_PI_2| |cos_eq_0_2PI_0::a|) (= |cos_eq_0_2PI_0::a| (* 3|symex::M_PI_2|))))))
+    (let ((?def193 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def194 (and ?def192 ?def193)))
+    (let ((?def195  (and ?def191 ?def194)))
+
+?def195
+)))))))
+
+(define-fun |cos_eq_0_2PI_1#0| ((|cos_eq_0_2PI_1::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|cos_eq_0_2PI_1::#return_value| Int) ) Bool
+    (let ((?def196 |cos_eq_0_2PI_1::#return_value|))
+    (let ((?def197  (= (|_cos#0| |cos_eq_0_2PI_1::a|) ?def196)))
+    (let ((?def198 (or (not (and (and (<= 0 |cos_eq_0_2PI_1::a|) (<= |cos_eq_0_2PI_1::a| (* 2|symex::M_PI|))) (or (= |symex::M_PI_2| |cos_eq_0_2PI_1::a|) (= |cos_eq_0_2PI_1::a| (* 3|symex::M_PI_2|))))) (= 0 ?def196))))
+    (let ((?def199 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def200 (and ?def198 ?def199)))
+    (let ((?def201  (and ?def197 ?def200)))
+
+?def201
+)))))))
+
+(define-fun |cos_form1#0| ((|cos_form1::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|cos_form1::#return_value| Int) ) Bool
+    (let ((?def202 |cos_form1::#return_value|))
+    (let ((?def203  (= (|_cos#0| |cos_form1::a|) ?def202)))
+    (let ((?def2040 (* 2 (uns_* (uns_cos (uns_/ (- |cos_form1::a| |symex::nondet::cos_7|) 2)) (uns_cos (uns_/ (+ |cos_form1::a| |symex::nondet::cos_7|) 2))))))
+    (let ((?def2041 (= (+ ?def202 (uns_cos |symex::nondet::cos_7|)) ?def2040)))
+    (let ((?def2042 (= ?def2040 (uns_* (* 2(uns_cos (uns_/ (- |cos_form1::a| |symex::nondet::cos_7|) 2))) (uns_cos (uns_/ (+ |cos_form1::a| |symex::nondet::cos_7|) 2))))))
+    (let ((?def2043 (= ?def2040 (uns_* (uns_cos (uns_/ (- |cos_form1::a| |symex::nondet::cos_7|) 2)) (* 2(uns_cos (uns_/ (+ |cos_form1::a| |symex::nondet::cos_7|) 2)))))))
+    (let ((?def2045 (= ?def2040 (uns_* (uns_cos (uns_/ (+ |cos_form1::a| |symex::nondet::cos_7|) 2)) (* 2(uns_cos (uns_/ (- |cos_form1::a| |symex::nondet::cos_7|) 2)))))))
+    (let ((?def2046 (= ?def2040 (uns_* (* 2(uns_cos (uns_/ (+ |cos_form1::a| |symex::nondet::cos_7|) 2))) (uns_cos (uns_/ (- |cos_form1::a| |symex::nondet::cos_7|) 2))))))
+    (let ((?def2047 (and ?def2045 ?def2046)))
+    (let ((?def2044 (and ?def2041 ?def2042)))
+    (let ((?def2048 (and ?def2043 ?def2044)))
+    (let ((?def204 (and ?def2047 ?def2048)))
+    (let ((?def205 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def206 (and ?def204 ?def205)))
+    (let ((?def207  (and ?def203 ?def206)))
+
+?def207
+))))))))))))))))
+
+(define-fun |cos_form2#0| ((|cos_form2::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|cos_form2::#return_value| Int) ) Bool
+    (let ((?def208 |cos_form2::#return_value|))
+    (let ((?def209  (= (|_cos#0| |cos_form2::a|) ?def208)))
+    (let ((?def2100 (- (* 2 (uns_* (uns_sin (uns_/ (- |cos_form2::a| |symex::nondet::cos_8|) 2)) (uns_sin (uns_/ (+ |cos_form2::a| |symex::nondet::cos_8|) 2)))))))
+    (let ((?def2101 (= (- ?def208 (uns_cos |symex::nondet::cos_8|)) ?def2100)))
+    (let ((?def2102 (= ?def2100 (- (uns_* (* 2(uns_sin (uns_/ (- |cos_form2::a| |symex::nondet::cos_8|) 2))) (uns_sin (uns_/ (+ |cos_form2::a| |symex::nondet::cos_8|) 2)))))))
+    (let ((?def2103 (= ?def2100 (- (uns_* (uns_sin (uns_/ (- |cos_form2::a| |symex::nondet::cos_8|) 2)) (* 2(uns_sin (uns_/ (+ |cos_form2::a| |symex::nondet::cos_8|) 2))))))))
+    (let ((?def2105 (= ?def2100 (- (uns_* (uns_sin (uns_/ (+ |cos_form2::a| |symex::nondet::cos_8|) 2)) (* 2(uns_sin (uns_/ (- |cos_form2::a| |symex::nondet::cos_8|) 2))))))))
+    (let ((?def2106 (= ?def2100 (- (uns_* (* 2(uns_sin (uns_/ (+ |cos_form2::a| |symex::nondet::cos_8|) 2))) (uns_sin (uns_/ (- |cos_form2::a| |symex::nondet::cos_8|) 2)))))))
+    (let ((?def21010 (= ?def2100 (uns_* (* (- 2) (uns_sin (uns_/ (- |cos_form2::a| |symex::nondet::cos_8|) 2))) (uns_sin (uns_/ (+ |cos_form2::a| |symex::nondet::cos_8|) 2))))))
+    (let ((?def21011 (= ?def2100 (uns_* (uns_sin (uns_/ (- |cos_form2::a| |symex::nondet::cos_8|) 2)) (* (- 2) (uns_sin (uns_/ (+ |cos_form2::a| |symex::nondet::cos_8|) 2)))))))
+    (let ((?def21012 (= ?def2100 (uns_* (uns_sin (uns_/ (+ |cos_form2::a| |symex::nondet::cos_8|) 2)) (* (- 2) (uns_sin (uns_/ (- |cos_form2::a| |symex::nondet::cos_8|) 2)))))))
+    (let ((?def21013 (= ?def2100 (uns_* (* (- 2) (uns_sin (uns_/ (+ |cos_form2::a| |symex::nondet::cos_8|) 2))) (uns_sin (uns_/ (- |cos_form2::a| |symex::nondet::cos_8|) 2))))))
+    (let ((?def21014 (and ?def21010 ?def21011)))
+    (let ((?def21015 (and ?def21012 ?def21013)))
+    (let ((?def21016 (and ?def21014 ?def21015)))
+    (let ((?def2107 (and ?def2105 ?def2106)))
+    (let ((?def2104 (and ?def2101 ?def2102)))
+    (let ((?def2108 (and ?def2103 ?def2104)))
+    (let ((?def2109 (and ?def2107 ?def2108)))
+    (let ((?def210 (and ?def21016 ?def2109)))
+    (let ((?def211 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def212 (and ?def210 ?def211)))
+    (let ((?def213  (and ?def209 ?def212)))
+
+?def213
+))))))))))))))))))))))))
+
+(define-fun |cos_ge_0#0| ((|cos_ge_0::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|cos_ge_0::#return_value| Int) ) Bool
+    (let ((?def214 |cos_ge_0::#return_value|))
+    (let ((?def215  (= (|_cos#0| |cos_ge_0::a|) ?def214)))
+    (let ((?def216 (or (not (and (<= (- |symex::M_PI_2|) |cos_ge_0::a|) (<= |cos_ge_0::a| |symex::M_PI_2|))) (<= 0 ?def214))))
+    (let ((?def217 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def218 (and ?def216 ?def217)))
+    (let ((?def219  (and ?def215 ?def218)))
+
+?def219
+)))))))
+
+(define-fun |cos_ge_0_3PI2#0| ((|cos_ge_0_3PI2::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|cos_ge_0_3PI2::#return_value| Int) ) Bool
+    (let ((?def220 |cos_ge_0_3PI2::#return_value|))
+    (let ((?def221  (= (|_cos#0| |cos_ge_0_3PI2::a|) ?def220)))
+    (let ((?def222 (or (not (and (<= (* 3|symex::M_PI_2|) |cos_ge_0_3PI2::a|) (<= |cos_ge_0_3PI2::a| (* 2|symex::M_PI|)))) (<= 0 ?def220))))
+    (let ((?def223 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def224 (and ?def222 ?def223)))
+    (let ((?def225  (and ?def221 ?def224)))
+
+?def225
+)))))))
+
+(define-fun |cos_gt_0#0| ((|cos_gt_0::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|cos_gt_0::#return_value| Int) ) Bool
+    (let ((?def226 |cos_gt_0::#return_value|))
+    (let ((?def227  (= (|_cos#0| |cos_gt_0::a|) ?def226)))
+    (let ((?def228 (or (not (and (< (- |symex::M_PI_2|) |cos_gt_0::a|) (< |cos_gt_0::a| |symex::M_PI_2|))) (< 0 ?def226))))
+    (let ((?def229 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def230 (and ?def228 ?def229)))
+    (let ((?def231  (and ?def227 ?def230)))
+
+?def231
+)))))))
+
+(define-fun |cos_incr_0#0| ((|cos_incr_0::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|cos_incr_0::#return_value| Int) ) Bool
+    (let ((?def232 |cos_incr_0::#return_value|))
+    (let ((?def233  (= (|_cos#0| |cos_incr_0::a|) ?def232)))
+    (let ((?def234 (or (not (and (and (<= |symex::M_PI| |cos_incr_0::a|) (<= |cos_incr_0::a| (* 2|symex::M_PI|)))     (and (<= |symex::M_PI| |symex::nondet::cos_9|) (<= |symex::nondet::cos_9| (* 2|symex::M_PI|)))))(and (or (not (<= ?def232 (uns_cos |symex::nondet::cos_9|))) (<= |cos_incr_0::a| |symex::nondet::cos_9|))     (or (not (<= (uns_cos |symex::nondet::cos_9|) ?def232)) (<= |symex::nondet::cos_9| |cos_incr_0::a|))))))
+    (let ((?def235 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def236 (and ?def234 ?def235)))
+    (let ((?def237  (and ?def233 ?def236)))
+
+?def237
+)))))))
+
+(define-fun |cos_incr_1#0| ((|cos_incr_1::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|cos_incr_1::#return_value| Int) ) Bool
+    (let ((?def238 |cos_incr_1::#return_value|))
+    (let ((?def239  (= (|_cos#0| |cos_incr_1::a|) ?def238)))
+    (let ((?def240 (or (not (and (and (<= |symex::M_PI| |cos_incr_1::a|) (<= |cos_incr_1::a| (* 2|symex::M_PI|)))     (and (<= |symex::M_PI| |symex::nondet::cos_10|) (<= |symex::nondet::cos_10| (* 2|symex::M_PI|)))))(and (or (not (<= |cos_incr_1::a| |symex::nondet::cos_10|)) (<= ?def238 (uns_cos |symex::nondet::cos_10|)))     (or (not (<= |symex::nondet::cos_10| |cos_incr_1::a|)) (<= (uns_cos |symex::nondet::cos_10|) ?def238))))))
+    (let ((?def241 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def242 (and ?def240 ?def241)))
+    (let ((?def243  (and ?def239 ?def242)))
+
+?def243
+)))))))
+
+(define-fun |cos_increasing_0#0| ((|cos_increasing_0::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|cos_increasing_0::#return_value| Int) ) Bool
+    (let ((?def244 |cos_increasing_0::#return_value|))
+    (let ((?def245  (= (|_cos#0| |cos_increasing_0::a|) ?def244)))
+    (let ((?def246 (or (not (and (and (<= |symex::M_PI| |cos_increasing_0::a|) (<= |cos_increasing_0::a| (* 2|symex::M_PI|)))     (and (<= |symex::M_PI| |symex::nondet::cos_11|) (<= |symex::nondet::cos_11| (* 2|symex::M_PI|)))))(and (or (not (< ?def244 (uns_cos |symex::nondet::cos_11|))) (< |cos_increasing_0::a| |symex::nondet::cos_11|))     (or (not (< (uns_cos |symex::nondet::cos_11|) ?def244)) (< |symex::nondet::cos_11| |cos_increasing_0::a|))))))
+    (let ((?def247 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def248 (and ?def246 ?def247)))
+    (let ((?def249  (and ?def245 ?def248)))
+
+?def249
+)))))))
+
+(define-fun |cos_increasing_1#0| ((|cos_increasing_1::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|cos_increasing_1::#return_value| Int) ) Bool
+    (let ((?def250 |cos_increasing_1::#return_value|))
+    (let ((?def251  (= (|_cos#0| |cos_increasing_1::a|) ?def250)))
+    (let ((?def252 (or (not (and (and (<= |symex::M_PI| |cos_increasing_1::a|) (<= |cos_increasing_1::a| (* 2|symex::M_PI|)))     (and (<= |symex::M_PI| |symex::nondet::cos_12|) (<= |symex::nondet::cos_12| (* 2|symex::M_PI|)))))(and (or (not (< |cos_increasing_1::a| |symex::nondet::cos_12|)) (< ?def250 (uns_cos |symex::nondet::cos_12|)))     (or (not (< |symex::nondet::cos_12| |cos_increasing_1::a|)) (< (uns_cos |symex::nondet::cos_12|) ?def250))))))
+    (let ((?def253 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def254 (and ?def252 ?def253)))
+    (let ((?def255  (and ?def251 ?def254)))
+
+?def255
+)))))))
+
+(define-fun |cos_le_0#0| ((|cos_le_0::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|cos_le_0::#return_value| Int) ) Bool
+    (let ((?def256 |cos_le_0::#return_value|))
+    (let ((?def257  (= (|_cos#0| |cos_le_0::a|) ?def256)))
+    (let ((?def258 (or (not (and (<= |symex::M_PI_2| |cos_le_0::a|) (<= |cos_le_0::a| (* 3|symex::M_PI_2|)))) (<= ?def256 0))))
+    (let ((?def259 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def260 (and ?def258 ?def259)))
+    (let ((?def261  (and ?def257 ?def260)))
+
+?def261
+)))))))
+
+(define-fun |cos_lt_0#0| ((|cos_lt_0::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|cos_lt_0::#return_value| Int) ) Bool
+    (let ((?def262 |cos_lt_0::#return_value|))
+    (let ((?def263  (= (|_cos#0| |cos_lt_0::a|) ?def262)))
+    (let ((?def264 (or (not (and (< |symex::M_PI_2| |cos_lt_0::a|) (< |cos_lt_0::a| (* 3|symex::M_PI_2|)))) (< ?def262 0))))
+    (let ((?def265 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def266 (and ?def264 ?def265)))
+    (let ((?def267  (and ?def263 ?def266)))
+
+?def267
+)))))))
+
+(define-fun |cos_minus#0| ((|cos_minus::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|cos_minus::#return_value| Int) ) Bool
+    (let ((?def268 |cos_minus::#return_value|))
+    (let ((?def269  (= (|_cos#0| |cos_minus::a|) ?def268)))
+    (let ((?def270 (and (= (uns_cos (- |cos_minus::a| |symex::nondet::cos_13|)) (+ (uns_* ?def268 (uns_cos |symex::nondet::cos_13|)) (uns_* (uns_sin |cos_minus::a|) (uns_sin |symex::nondet::cos_13|))))	(and (= (uns_* ?def268 (uns_cos |symex::nondet::cos_13|)) (uns_* (uns_cos |symex::nondet::cos_13|) ?def268)) 	     (= (uns_* (uns_sin |cos_minus::a|) (uns_sin |symex::nondet::cos_13|)) (uns_* (uns_sin |symex::nondet::cos_13|) (uns_sin |cos_minus::a|)))))))
+    (let ((?def271 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def272 (and ?def270 ?def271)))
+    (let ((?def273  (and ?def269 ?def272)))
+
+?def273
+)))))))
+
+(define-fun |cos_neg#0| ((|cos_neg::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|cos_neg::#return_value| Int) ) Bool
+    (let ((?def274 |cos_neg::#return_value|))
+    (let ((?def275  (= (|_cos#0| |cos_neg::a|) ?def274)))
+    (let ((?def276 (= (|_cos#0| (- |cos_neg::a|)) ?def274)))
+    (let ((?def277 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def278 (and ?def276 ?def277)))
+    (let ((?def279  (and ?def275 ?def278)))
+
+?def279
+)))))))
+
+(define-fun |cos_period#0| ((|cos_period::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|cos_period::#return_value| Int) ) Bool
+    (let ((?def280 |cos_period::#return_value|))
+    (let ((?def281  (= (|_cos#0| |cos_period::a|) ?def280)))
+    (let ((?def282 (= (|_cos#0| (+ |cos_period::a|  (* (* 2 |symex::M_PI|) |symex::nondet::cos_0|))) ?def280)))
+    (let ((?def283 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def284 (and ?def282 ?def283)))
+    (let ((?def285  (and ?def281 ?def284)))
+
+?def285
+)))))))
+
+(define-fun |cos_plus#0| ((|cos_plus::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|cos_plus::#return_value| Int) ) Bool
+    (let ((?def286 |cos_plus::#return_value|))
+    (let ((?def287  (= (|_cos#0| |cos_plus::a|) ?def286)))
+    (let ((?def288 (and (= (uns_cos (+ |cos_plus::a| |symex::nondet::cos_14|)) (- (uns_* ?def286 (uns_cos |symex::nondet::cos_14|)) (uns_* (uns_sin |cos_plus::a|) (uns_sin |symex::nondet::cos_14|))))	(and (= (uns_* ?def286 (uns_cos |symex::nondet::cos_14|)) (uns_* (uns_cos |symex::nondet::cos_14|) ?def286)) 	     (= (uns_* (uns_sin |cos_plus::a|) (uns_sin |symex::nondet::cos_14|)) (uns_* (uns_sin |symex::nondet::cos_14|) (uns_sin |cos_plus::a|)))))))
+    (let ((?def289 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def290 (and ?def288 ?def289)))
+    (let ((?def291  (and ?def287 ?def290)))
+
+?def291
+)))))))
+
+(define-fun |cos_sin#0| ((|cos_sin::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|cos_sin::#return_value| Int) ) Bool
+    (let ((?def292 |cos_sin::#return_value|))
+    (let ((?def293  (= (|_cos#0| |cos_sin::a|) ?def292)))
+    (let ((?def294 (= ?def292 (|_sin#0| (+ |symex::M_PI_2| |cos_sin::a|)))))
+    (let ((?def295 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def296 (and ?def294 ?def295)))
+    (let ((?def297  (and ?def293 ?def296)))
+
+?def297
+)))))))
+
+(define-fun |cos_sin2_cos2#0| ((|cos_sin2_cos2::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|cos_sin2_cos2::#return_value| Int) ) Bool
+    (let ((?def298 |cos_sin2_cos2::#return_value|))
+    (let ((?def299  (= (|_cos#0| |cos_sin2_cos2::a|) ?def298)))
+    (let ((?def300 (= 1(+ (uns_* ?def298 ?def298) (uns_* (|_sin#0| |cos_sin2_cos2::a|) (|_sin#0| |cos_sin2_cos2::a|))))))
+    (let ((?def301 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def302 (and ?def300 ?def301)))
+    (let ((?def303  (and ?def299 ?def302)))
+
+?def303
+)))))))
+
+(define-fun |cos_sin_2a#0| ((|cos_sin_2a::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|cos_sin_2a::#return_value| Int) ) Bool
+    (let ((?def304 |cos_sin_2a::#return_value|))
+    (let ((?def305  (= (|_cos#0| |cos_sin_2a::a|) ?def304)))
+    (let ((?def3060 (= (|_sin#0| (* 2|cos_sin_2a::a|)) (* 2(uns_* (|_sin#0| |cos_sin_2a::a|) ?def304)))))
+    (let ((?def3061 (= (uns_* (|_sin#0| |cos_sin_2a::a|) ?def304)  (uns_* ?def304 (|_sin#0| |cos_sin_2a::a|)))))
+    (let ((?def3062 (= (* 2(uns_* (|_sin#0| |cos_sin_2a::a|) ?def304)) (uns_* (* 2 (|_sin#0| |cos_sin_2a::a|)) ?def304))))
+    (let ((?def3063 (= (* 2(uns_* (|_sin#0| |cos_sin_2a::a|) ?def304)) (uns_* ?def304 (* 2 (|_sin#0| |cos_sin_2a::a|))))))
+    (let ((?def3064 (= (* 2(uns_* (|_sin#0| |cos_sin_2a::a|) ?def304)) (uns_* (|_sin#0| |cos_sin_2a::a|) (* 2?def304)))))
+    (let ((?def3065 (= (* 2(uns_* (|_sin#0| |cos_sin_2a::a|) ?def304)) (uns_* (* 2?def304) (|_sin#0| |cos_sin_2a::a|)))))
+    (let ((?def3066 (and ?def3060 ?def3061)))
+    (let ((?def3067 (and ?def3062 ?def3063)))
+    (let ((?def3068 (and ?def3064 ?def3065)))
+    (let ((?def3069 (and ?def3066 ?def3067)))
+    (let ((?def306  (and ?def3068 ?def3069)))
+    (let ((?def307 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def308 (and ?def306 ?def307)))
+    (let ((?def309  (and ?def305 ?def308)))
+
+?def309
+)))))))))))))))))
+
+(define-fun |cos_sin_minus#0| ((|cos_sin_minus::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|cos_sin_minus::#return_value| Int) ) Bool
+    (let ((?def310 |cos_sin_minus::#return_value|))
+    (let ((?def311  (= (|_cos#0| |cos_sin_minus::a|) ?def310)))
+    (let ((?def312 (and (= (uns_sin (- |cos_sin_minus::a| |symex::nondet::cos_15|)) (- (uns_* (uns_sin |cos_sin_minus::a|) (uns_cos |symex::nondet::cos_15|)) (uns_* ?def310 (uns_sin |symex::nondet::cos_15|))))	(and (= (uns_* (uns_sin |cos_sin_minus::a|) (uns_cos |symex::nondet::cos_15|)) (uns_* (uns_cos |symex::nondet::cos_15|) (uns_sin |cos_sin_minus::a|))) (= (uns_* ?def310 (uns_sin |symex::nondet::cos_15|)) (uns_* (uns_sin |symex::nondet::cos_15|) ?def310))))))
+    (let ((?def313 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def314 (and ?def312 ?def313)))
+    (let ((?def315  (and ?def311 ?def314)))
+
+?def315
+)))))))
+
+(define-fun |cos_sin_plus#0| ((|cos_sin_plus::a| Int)(|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|cos_sin_plus::#return_value| Int) ) Bool
+    (let ((?def316 |cos_sin_plus::#return_value|))
+    (let ((?def317  (= (|_cos#0| |cos_sin_plus::a|) ?def316)))
+    (let ((?def318 (and (= (uns_sin (+ |cos_sin_plus::a| |symex::nondet::cos_16|)) (+ (uns_* (uns_sin |cos_sin_plus::a|) (uns_cos |symex::nondet::cos_16|)) (uns_* ?def316 (uns_sin |symex::nondet::cos_16|))))	(and (= (uns_* (uns_sin |cos_sin_plus::a|) (uns_cos |symex::nondet::cos_16|)) (uns_* (uns_cos |symex::nondet::cos_16|) (uns_sin |cos_sin_plus::a|))) (= (uns_* ?def316 (uns_sin |symex::nondet::cos_16|)) (uns_* (uns_sin |symex::nondet::cos_16|) ?def316))))))
+    (let ((?def319 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def320 (and ?def318 ?def319)))
+    (let ((?def321  (and ?def317 ?def320)))
+
+?def321
+)))))))
+
+(define-fun |cos_sin_shift#0| ((|cos_sin_shift::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|cos_sin_shift::#return_value| Int) ) Bool
+    (let ((?def322 |cos_sin_shift::#return_value|))
+    (let ((?def323  (= (|_cos#0| |cos_sin_shift::a|) ?def322)))
+    (let ((?def324 (= ?def322 (|_sin#0| (- |symex::M_PI_2| |cos_sin_shift::a|)))))
+    (let ((?def325 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def326 (and ?def324 ?def325)))
+    (let ((?def327  (and ?def323 ?def326)))
+
+?def327
+)))))))
+
+(define-fun |neg_cos#0| ((|neg_cos::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|neg_cos::#return_value| Int) ) Bool
+    (let ((?def328 |neg_cos::#return_value|))
+    (let ((?def329  (= (|_cos#0| |neg_cos::a|) ?def328)))
+    (let ((?def330 (= (|_cos#0| (+ |neg_cos::a| |symex::M_PI|)) (- ?def328))))
+    (let ((?def331 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def332 (and ?def330 ?def331)))
+    (let ((?def333  (and ?def329 ?def332)))
+
+?def333
+)))))))
+
+(define-fun |cos_sin_bound_1#0| ((|cos_sin_bound_1::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|cos_sin_bound_1::#return_value| Int) ) Bool
+    (let ((?def334 |cos_sin_bound_1::#return_value|))
+    (let ((?def335  (= (|_cos#0| |cos_sin_bound_1::a|) ?def334)))
+    (let ((?def336 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def338 (and (< 0 |cos_sin_bound_1::a|) (< |cos_sin_bound_1::a| 1))))
+    (let ((?def339 (uns_* |cos_sin_bound_1::a| ?def334)))
+    (let ((?def343 (= ?def339 (uns_* ?def334 |cos_sin_bound_1::a|))))
+    (let ((?def337 (|_sin#0| |cos_sin_bound_1::a|)))
+    (let ((?def340 (or (not ?def338) (and (< 0 ?def339) (and (< ?def339 ?def337) (< ?def337 |cos_sin_bound_1::a|))))))
+    (let ((?def341 (and ?def340 ?def336)))
+    (let ((?def342 (and ?def335 ?def341)))
+    (let ((?def344 (and ?def343 ?def342)))
+
+?def344
+))))))))))))
+
+(define-fun |guard_cos_decr#0| ((|guard_cos_decr::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_cos_decr::#return_value| Int) ) Bool
+    (let ((?def99011  	|guard_cos_decr::#return_value|))
+    (let ((?def99012  	(= (|_cos#0| |guard_cos_decr::a|) ?def99011)))
+    (let ((?def99013 	(and (<= 0 |guard_cos_decr::a|) (<= |guard_cos_decr::a| |symex::M_PI|)) ))
+    (let ((?def99014 	(and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def99015 	(and ?def99012 ?def99014)))
+    (let ((?def99016  	(and ?def99013 ?def99015)))
+
+?def99016
+)))))))
+
+(define-fun |guard_cos_decreasing#0| ((|guard_cos_decreasing::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_cos_decreasing::#return_value| Int) ) Bool
+    (let ((?def99021  	|guard_cos_decreasing::#return_value|))
+    (let ((?def99022  	(= (|_cos#0| |guard_cos_decreasing::a|) ?def99021)))
+    (let ((?def99023 	(and (<= 0 |guard_cos_decreasing::a|) (<= |guard_cos_decreasing::a| |symex::M_PI|)) ))
+    (let ((?def99024 	(and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def99025 	(and ?def99022 ?def99024)))
+    (let ((?def99026  	(and ?def99023 ?def99025)))
+
+?def99026
+)))))))
+
+(define-fun |guard_cos_ge_0#0| ((|guard_cos_ge_0::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_cos_ge_0::#return_value| Int) ) Bool
+    (let ((?def99031  	|guard_cos_ge_0::#return_value|))
+    (let ((?def99032  	(= (|_cos#0| |guard_cos_ge_0::a|) ?def99031)))
+    (let ((?def99033 	(and (< (- |symex::M_PI_2|) |guard_cos_ge_0::a|) (< |guard_cos_ge_0::a| |symex::M_PI_2|)) ))
+    (let ((?def99034 	(and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def99035 	(and ?def99032 ?def99034)))
+    (let ((?def99036  	(and ?def99033 ?def99035)))
+
+?def99036
+)))))))
+
+(define-fun |guard_cos_ge_0_3PI2#0| ((|guard_cos_ge_0_3PI2::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_cos_ge_0_3PI2::#return_value| Int) ) Bool
+    (let ((?def99041  	|guard_cos_ge_0_3PI2::#return_value|))
+    (let ((?def99042  	(= (|_cos#0| |guard_cos_ge_0_3PI2::a|) ?def99041)))
+    (let ((?def99043 	(and (< (* 3 |symex::M_PI_2|) |guard_cos_ge_0_3PI2::a|) (< |guard_cos_ge_0_3PI2::a| (* 2 |symex::M_PI|)))))
+    (let ((?def99044 	(and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def99045 	(and ?def99042 ?def99044)))
+    (let ((?def99046  	(and ?def99043 ?def99045)))
+
+?def99046
+)))))))
+
+(define-fun |guard_minus_x_half_pi#0| ((|guard_minus_x_half_pi::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_minus_x_half_pi::#return_value| Int) ) Bool
+    (let ((?def99051  	|guard_minus_x_half_pi::#return_value|))
+    (let ((?def99052  	(= (|_cos#0| |guard_minus_x_half_pi::a|) ?def99051)))
+    (let ((?def99053 	(or (= |guard_minus_x_half_pi::a| (uns_/ (- |symex::M_PI|) 2)) (= |guard_minus_x_half_pi::a| (- |symex::M_PI_2|)))))
+    (let ((?def99054 	(and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def99055 	(and ?def99052 ?def99054)))
+    (let ((?def99056  	(and ?def99053 ?def99055)))
+
+?def99056
+)))))))
+
+(define-fun |guard_cos_0#0| ((|guard_cos_0::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_cos_0::#return_value| Int) ) Bool
+    (let ((?def99061  	|guard_cos_0::#return_value|))
+    (let ((?def99062  	(= (|_cos#0| |guard_cos_0::a|) ?def99061)))
+    (let ((?def99063 	(= ?def99061 0 )))
+    (let ((?def99064 	(and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def99065 	(and ?def99062 ?def99064)))
+    (let ((?def99066  	(and ?def99063 ?def99065)))
+
+?def99066
+)))))))
+
+(define-fun |guard_cos_eq_0_2PI_0#0| ((|guard_cos_eq_0_2PI_0::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_cos_eq_0_2PI_0::#return_value| Int) ) Bool
+    (let ((?def99071  	|guard_cos_eq_0_2PI_0::#return_value|))
+    (let ((?def99072  	(= (|_cos#0| |guard_cos_eq_0_2PI_0::a|) ?def99071)))
+    (let ((?def99073 	(and (<= 0 |guard_cos_eq_0_2PI_0::a|) (<= |guard_cos_eq_0_2PI_0::a| (* 2 |symex::M_PI|))) ))
+    (let ((?def99074 	(and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def99075 	(and ?def99072 ?def99074)))
+    (let ((?def99076  	(and ?def99073 ?def99075)))
+
+?def99076
+)))))))
+
+(define-fun |guard_cos_incr#0| ((|guard_cos_incr::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_cos_incr::#return_value| Int) ) Bool
+    (let ((?def99081  	|guard_cos_incr::#return_value|))
+    (let ((?def99082  	(= (|_cos#0| |guard_cos_incr::a|) ?def99081)))
+    (let ((?def99083 	(and (< |symex::M_PI| |guard_cos_incr::a|) (<= |guard_cos_incr::a| (* 2 |symex::M_PI|)))))
+    (let ((?def99084 	(and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def99085 	(and ?def99082 ?def99084)))
+    (let ((?def99086  	(and ?def99083 ?def99085)))
+
+?def99086
+)))))))
+
+(define-fun |guard_cos_increasing#0| ((|guard_cos_increasing::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_cos_increasing::#return_value| Int) ) Bool
+    (let ((?def99091  	|guard_cos_increasing::#return_value|))
+    (let ((?def99092  	(= (|_cos#0| |guard_cos_increasing::a|) ?def99091)))
+    (let ((?def99093 	(and (< |symex::M_PI| |guard_cos_increasing::a|) (<= |guard_cos_increasing::a| (* 2 |symex::M_PI|)))))
+    (let ((?def99094 	(and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def99095 	(and ?def99092 ?def99094)))
+    (let ((?def99096  	(and ?def99093 ?def99095)))
+
+?def99096
+)))))))
+
+(define-fun |guard_cos_eq_0_2PI_1#0| ((|guard_cos_eq_0_2PI_1::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_cos_eq_0_2PI_1::#return_value| Int) ) Bool
+    (let ((?def99101  	|guard_cos_eq_0_2PI_1::#return_value|))
+    (let ((?def99102  	(= (|_cos#0| |guard_cos_eq_0_2PI_1::a|) ?def99101)))
+    (let ((?def99103 	(and (<= 0 |guard_cos_eq_0_2PI_1::a|) (<= |guard_cos_eq_0_2PI_1::a| (* 2 |symex::M_PI|))) ))
+    (let ((?def99104 	(and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def99105 	(and ?def99102 ?def99104)))
+    (let ((?def99106  	(and ?def99103 ?def99105)))
+
+?def99106
+)))))))
+
+(define-fun |guard_not_cos_eq_0_2PI_1#0| ((|guard_not_cos_eq_0_2PI_1::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_not_cos_eq_0_2PI_1::#return_value| Int) ) Bool
+    (let ((?def99111  	|guard_not_cos_eq_0_2PI_1::#return_value|))
+    (let ((?def99112  	(= (|_cos#0| |guard_not_cos_eq_0_2PI_1::a|) ?def99111)))
+    (let ((?def99113 	(not (and (<= 0 |guard_not_cos_eq_0_2PI_1::a|) (<= |guard_not_cos_eq_0_2PI_1::a| (* 2 |symex::M_PI|)))) ))
+    (let ((?def99114 	(and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def99115 	(and ?def99112 ?def99114)))
+    (let ((?def99116  	(and ?def99113 ?def99115)))
+
+?def99116
+)))))))
+
+(define-fun |guard_cos_k#0| ((|guard_cos_k::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_cos_k::#return_value| Int) ) Bool
+    (let ((?def99121  	|guard_cos_k::#return_value|))
+    (let ((?def99122  	(= (|_cos#0| |guard_cos_k::a|) ?def99121)))
+    (let ((?def99123 	(= |guard_cos_k::a| (+ (* |symex::M_PI| |symex::nondet::cos_2|) (uns_/ |symex::M_PI| 2)))))
+    (let ((?def99124 	(and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def99125 	(and ?def99122 ?def99124)))
+    (let ((?def99126  	(and ?def99123 ?def99125)))
+
+?def99126
+)))))))
+
+;; Can be a hueristic when sin(x) won't consider it's own var as a candidate
+(define-fun |guard_x_eq_y#0| ((|guard_x_eq_y::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_x_eq_y::#return_value| Int) ) Bool
+    (let ((?def99131  	|guard_x_eq_y::#return_value|))
+    (let ((?def99132  	(= (|_cos#0| |guard_x_eq_y::a|) ?def99131)))
+    (let ((?def99133 	(or (= |guard_x_eq_y::a| (uns_/ 2 |symex::nondet::cos_17|))  (or (= |guard_x_eq_y::a| (* 2 |symex::nondet::cos_17|)) (= |guard_x_eq_y::a| |symex::nondet::cos_17|)))))
+    (let ((?def99134 	(and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def99135 	(and ?def99132 ?def99134)))
+    (let ((?def99136  	(and ?def99133 ?def99135)))
+
+?def99136
+)))))))
+
+(define-fun |guard_cos_le_0#0| ((|guard_cos_le_0::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_cos_le_0::#return_value| Int) ) Bool
+    (let ((?def99141  	|guard_cos_le_0::#return_value|))
+    (let ((?def99142  	(= (|_cos#0| |guard_cos_le_0::a|) ?def99141)))
+    (let ((?def99143 	(and (< |symex::M_PI_2| |guard_cos_le_0::a|) (< |guard_cos_le_0::a| (* 3 |symex::M_PI_2|)))))
+    (let ((?def99144 	(and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def99145 	(and ?def99142 ?def99144)))
+    (let ((?def99146  	(and ?def99143 ?def99145)))
+
+?def99146
+)))))))
+
+(define-fun |guard_0_x_1#0| ((|guard_0_x_1::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_0_x_1::#return_value| Int) ) Bool
+    (let ((?def99151  	|guard_0_x_1::#return_value|))
+    (let ((?def99152  	(= (|_cos#0| |guard_0_x_1::a|) ?def99151)))
+    (let ((?def99153 	(and (< 0 |guard_0_x_1::a|) (< |guard_0_x_1::a| 1)) ))
+    (let ((?def99154 	(and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def99155 	(and ?def99152 ?def99154)))
+    (let ((?def99156  	(and ?def99153 ?def99155)))
+
+?def99156
+)))))))
+
+(define-fun |guard_x_0#0| ((|guard_x_0::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_x_0::#return_value| Int) ) Bool
+    (let ((?def99161  	|guard_x_0::#return_value|))
+    (let ((?def99162  	(= (|_cos#0| |guard_x_0::a|) ?def99161)))
+    (let ((?def99163 	(= 0 |guard_x_0::a|)))
+    (let ((?def99164 	(and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def99165 	(and ?def99162 ?def99164)))
+    (let ((?def99166  	(and ?def99163 ?def99165)))
+
+?def99166
+)))))))
+
+(define-fun |guard_x_2pi#0| ((|guard_x_2pi::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_x_2pi::#return_value| Int) ) Bool
+    (let ((?def99171  	|guard_x_2pi::#return_value|))
+    (let ((?def99172  	(= (|_cos#0| |guard_x_2pi::a|) ?def99171)))
+    (let ((?def99173 	(= (* 2 |symex::M_PI|) |guard_x_2pi::a|)))
+    (let ((?def99174 	(and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def99175 	(and ?def99172 ?def99174)))
+    (let ((?def99176  	(and ?def99173 ?def99175)))
+
+?def99176
+)))))))
+
+(define-fun |guard_else_final#0| ((|guard_else_final::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_else_final::#return_value| Int) ) Bool
+    (let ((?def99181  	|guard_else_final::#return_value|))
+    (let ((?def99182  	(= (|_cos#0| |guard_else_final::a|) ?def99181)))
+    (let ((?def99183 	(not (and (<= 0 |guard_else_final::a|) (<= |guard_else_final::a| (* 2 |symex::M_PI|))) )))
+    (let ((?def99184 	(and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def99185 	(and ?def99182 ?def99184)))
+    (let ((?def99186  	(and ?def99183 ?def99185)))
+
+?def99186
+)))))))
+
+;; Only if other variables are candidates
+(define-fun |guard_x_neq_y#0| ((|guard_x_neq_y::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_x_neq_y::#return_value| Int) ) Bool
+    (let ((?def99191  	|guard_x_neq_y::#return_value|))
+    (let ((?def99192  	(= (|_cos#0| |guard_x_neq_y::a|) ?def99191)))
+    (let ((?def99193 	(not (or (= |guard_x_neq_y::a| (uns_/ 2 |symex::nondet::cos_18|))  (or (= |guard_x_neq_y::a| (* 2 |symex::nondet::cos_18|)) (= |guard_x_neq_y::a| |symex::nondet::cos_18|))))))
+    (let ((?def99194 	(and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def99195 	(and ?def99192 ?def99194)))
+    (let ((?def99196  	(and ?def99193 ?def99195)))
+
+?def99196
+)))))))
+
+(define-fun |guard_not_0_x_1#0| ((|guard_not_0_x_1::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_not_0_x_1::#return_value| Int) ) Bool
+    (let ((?def99201  	|guard_not_0_x_1::#return_value|))
+    (let ((?def99202  	(= (|_cos#0| |guard_not_0_x_1::a|) ?def99201)))
+    (let ((?def99203 	(not (and (< 0 |guard_not_0_x_1::a|) (< |guard_not_0_x_1::a| 1))) ))
+    (let ((?def99204 	(and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def99205 	(and ?def99202 ?def99204)))
+    (let ((?def99206  	(and ?def99203 ?def99205)))
+
+?def99206
+)))))))
+
+(define-fun |guard_else_k#0| ((|guard_else_k::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_else_k::#return_value| Int) ) Bool
+    (let ((?def99211  	|guard_else_k::#return_value|))
+    (let ((?def99212  	(= (|_cos#0| |guard_else_k::a|) ?def99211)))
+    (let ((?def99213 	(and (not (= 0 ?def99211)) (not (= |guard_else_k::a| (+ (* |symex::M_PI| |symex::nondet::cos_2|) (uns_/ |symex::M_PI| 2)))))))
+    (let ((?def99214 	(and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def99215 	(and ?def99212 ?def99214)))
+    (let ((?def99216  	(and ?def99213 ?def99215)))
+
+?def99216
+)))))))
+
+(define-fun |guard_x_lt_minus_half_pi_gt_2_pi#0| ((|guard_x_lt_minus_half_pi_gt_2_pi::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_x_lt_minus_half_pi_gt_2_pi::#return_value| Int) ) Bool
+    (let ((?def99221  	|guard_x_lt_minus_half_pi_gt_2_pi::#return_value|))
+    (let ((?def99222  	(= (|_cos#0| |guard_x_lt_minus_half_pi_gt_2_pi::a|) ?def99221)))
+    (let ((?def99223 	(not (and (<= (- |symex::M_PI_2|) |guard_x_lt_minus_half_pi_gt_2_pi::a|) (<= |guard_x_lt_minus_half_pi_gt_2_pi::a| (* 2 |symex::M_PI|)))) ))
+    (let ((?def99224 	(and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def99225 	(and ?def99222 ?def99224)))
+    (let ((?def99226  	(and ?def99223 ?def99225)))
+
+?def99226
+)))))))
+
+(define-fun |guard_not_in_0_2pi#0| ((|guard_not_in_0_2pi::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_not_in_0_2pi::#return_value| Int) ) Bool
+    (let ((?def99231  	|guard_not_in_0_2pi::#return_value|))
+    (let ((?def99232  	(= (|_cos#0| |guard_not_in_0_2pi::a|) ?def99231)))
+    (let ((?def99233 	(not (and (<= 0 |guard_not_in_0_2pi::a|) (<= |guard_not_in_0_2pi::a| (* 2 |symex::M_PI|)))) ))
+    (let ((?def99234 	(and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def99235 	(and ?def99232 ?def99234)))
+    (let ((?def99236  	(and ?def99233 ?def99235)))
+
+?def99236
+)))))))
+
+
+(define-fun |guard_x_3_2_pi#0| ((|guard_x_3_2_pi::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_x_3_2_pi::#return_value| Int) ) Bool
+    (let ((?def99241  	|guard_x_3_2_pi::#return_value|))
+    (let ((?def99242  	(= (|_cos#0| |guard_x_3_2_pi::a|) ?def99241)))
+    (let ((?def99243 	(or (= |guard_x_3_2_pi::a| (* 3 (uns_/ |symex::M_PI| 2))) (= |guard_x_3_2_pi::a| (* 3 |symex::M_PI_2|)))))
+    (let ((?def99244 	(and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def99245 	(and ?def99242 ?def99244)))
+    (let ((?def99246  	(and ?def99243 ?def99245)))
+
+?def99246
+)))))))
+
+(define-fun |guard_x_half_pi#0| ((|guard_x_half_pi::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_x_half_pi::#return_value| Int) ) Bool
+    (let ((?def99251  	|guard_x_half_pi::#return_value|))
+    (let ((?def99252  	(= (|_cos#0| |guard_x_half_pi::a|) ?def99251)))
+    (let ((?def99253 	(or (= |guard_x_half_pi::a| (uns_/ |symex::M_PI| 2)) (= |guard_x_half_pi::a| |symex::M_PI_2|))))
+    (let ((?def99254 	(and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def99255 	(and ?def99252 ?def99254)))
+    (let ((?def99256  	(and ?def99253 ?def99255)))
+
+?def99256
+)))))))
+
+(define-fun |guard_not_cos_eq_0_2PI_0#0| ((|guard_not_cos_eq_0_2PI_0::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|guard_not_cos_eq_0_2PI_0::#return_value| Int) ) Bool
+    (let ((?def99261  	|guard_not_cos_eq_0_2PI_0::#return_value|))
+    (let ((?def99262  	(= (|_cos#0| |guard_not_cos_eq_0_2PI_0::a|) ?def99261)))
+    (let ((?def99263 	(not (and (<= 0 |guard_not_cos_eq_0_2PI_0::a|) (<= |guard_not_cos_eq_0_2PI_0::a| (* 2 |symex::M_PI|)))) ))
+    (let ((?def99264 	(and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def99265 	(and ?def99262 ?def99264)))
+    (let ((?def99266  	(and ?def99263 ?def99265)))
+
+?def99266
+)))))))
+
+(define-fun |null_final#0| ((|null_final::a| Int) (|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|null_final::#return_value| Int) ) Bool
+    (let ((?def99271  	|null_final::#return_value|))
+    (let ((?def99272  	(= (|_cos#0| |null_final::a|) ?def99271)))
+    (let ((?def99274 	(and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def99275 	(and ?def99272 ?def99274)))
+
+?def99275
+)))))

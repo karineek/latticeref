@@ -1,0 +1,17 @@
+(define-fun |M_PI_def#0| ((|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|M_PI_def::#return_value| Real) ) Bool
+    (let ((?def901 |M_PI_def::#return_value|))
+    (let ((?def902 (= |symex::M_PI| ?def901)))
+    (let ((?def903 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def904 (and ?def902 ?def903)))
+
+?def904
+)))))
+
+(define-fun |M_PI_2_def#0| ((|hifrog::fun_start| Bool) (|hifrog::fun_end| Bool) (|M_PI_2_def::#return_value| Real) ) Bool
+    (let ((?def911 |M_PI_2_def::#return_value|))
+    (let ((?def912 (= |symex::M_PI_2| ?def911)))
+    (let ((?def913 (and |hifrog::fun_end| (or (not |hifrog::fun_end|) |hifrog::fun_start|))))
+    (let ((?def914 (and ?def912 ?def913)))
+
+?def914
+)))))
