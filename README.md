@@ -57,7 +57,7 @@ Run HiFrog with Summaries
 
 Run HiFrog with a Single Lattice
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-./hifrog <c-file> --logic <logic> --save-summaries __summaries --claim 1 --solver <solver> --solving-mode inc --no-slicing --load-summaries user_defined_summaries/__summaries_sin_lra,user_defined_summaries/__summaries_cos_lra,user_defined_summaries/__summaries_const_sin_cos --load-sum-model lattices/sin_lattice_lra,lattices/cos_lattice_lra 
+./hifrog <c-file> --logic <logic> --save-summaries __summaries --claim 1 --solver <solver> --solving-mode inc --no-slicing --load-summaries user_defined_summaries/__summaries_sin_lra --load-sum-model lattices/sin_lattice_lra 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
