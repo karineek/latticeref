@@ -1,7 +1,11 @@
 #include <math.h>
+
+double M_PI_def() {}
+double _M_PI = M_PI_def();
+
 void main()
 {
-    double x; double x_2 = M_PI/2 - x;
+    double x; double x_2 = _M_PI/2 - x;
 
     double val_cos_x = cos(x);    
 

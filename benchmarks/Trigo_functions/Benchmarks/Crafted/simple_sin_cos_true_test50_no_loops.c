@@ -1,8 +1,12 @@
 #include <math.h>
+
+double M_PI_def() {}
+double _M_PI = M_PI_def();
+
 void main()
 {
-    double q=M_PI; 
-    double p=M_PI*0.5;
+    double q=_M_PI; 
+    double p=_M_PI*0.5;
 
     double val_sin_p = sin(p);
     double val_sin_q = sin(q);    

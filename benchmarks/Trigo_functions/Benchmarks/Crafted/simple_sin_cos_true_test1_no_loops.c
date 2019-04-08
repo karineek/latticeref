@@ -10,6 +10,6 @@ void main()
 
     assert(sphere_x == val_2sin); // UNSAT
     assert(sphere_x != val_2sin); // SAT
-     // SAT
+    assert(0); // SAT
     // sin(2x) == 2*cos(x)*sin(x)
 }
