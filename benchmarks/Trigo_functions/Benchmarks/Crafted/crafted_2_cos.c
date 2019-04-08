@@ -7,6 +7,6 @@ void main()
 
     assert(val_neg_cos == val_cos); // UNSAT
     assert(val_neg_cos != val_cos); // SAT
-    assert(0); //SAT
+    
     // cos (- x) = cos x
 }

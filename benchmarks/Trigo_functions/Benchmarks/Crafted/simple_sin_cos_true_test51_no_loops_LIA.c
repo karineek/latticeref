@@ -4,7 +4,6 @@ void main()
     double x;
     //__CPROVER_assume(0 < x); - OPEN INTERVALS ARE NOT ALLOWED IN LIA!
     //__CPROVER_assume(x < 1); - OPEN INTERVALS ARE NOT ALLOWED IN LIA!
-    // Is in LIA always UNSAT, as no value exists in LIA between 0 to 1!!
 
     double val_sin = sin(x);
     double val_cos = cos(x);    

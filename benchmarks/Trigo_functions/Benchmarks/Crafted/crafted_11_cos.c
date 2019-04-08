@@ -7,6 +7,6 @@ void main()
     assert(0 > val_cos); // UNSAT
     assert(0 == val_cos); // SAT
     assert(0 < val_cos); // SAT
-    assert(0); // SAT
+     // SAT
     // forall x:R, PI / 2 < x -> x < 3 * (PI / 2) -> cos x < 0
 }
