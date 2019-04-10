@@ -32,5 +32,6 @@ int main()
         // ALL UNSAT;
 	assert(sphere_x == temp); // UNSAT 
 	assert(sphere_x < 0); //UNSAT
-	assert(sphere_x > 0); //SAT 
+	assert(sphere_x > 0); //SAT
+        assert(0); //SAT - Validation test only
 }

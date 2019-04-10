@@ -145,7 +145,7 @@ void main()
 
     assert(0 > val_sin); // UNSAT
     assert(0 == val_sin); // SAT
-    assert(0 < val_sin); // SAT
+    //assert(0 < val_sin); // SAT
      // SAT
     // PI < x -> x < 2 * PI -> sin x < 0.
 }

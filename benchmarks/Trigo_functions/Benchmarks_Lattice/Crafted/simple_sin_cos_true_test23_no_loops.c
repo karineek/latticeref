@@ -12,5 +12,6 @@ void main()
 
     assert(val_sin_x == val_cos_x); // UNSAT
     assert(val_sin_x != val_cos_x); // SAT
+    assert(0);
     // sin (PI / 2 - x) = cos x
 }

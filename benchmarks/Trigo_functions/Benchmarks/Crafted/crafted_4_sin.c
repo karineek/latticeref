@@ -137,7 +137,7 @@ double SIN(double x)
 
 void main()
 {
-    double x = 0.1; double y = x + 180;
+    double x; double y = x + 180;
     double val_sin = SIN(y);
     double val_neg_sin = - SIN(x);
 
