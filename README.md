@@ -1,17 +1,18 @@
 # latticeref
 Lattice Refinement Algorithms and Benchmarks
 
+HiFrog Version (Recent): https://scm.ti-edu.ch/projects/hifrog/repository?utf8=%E2%9C%93&rev=latticeref-v2-trigo 
 
 
 Lattice-based refinement for modulo function:
 =============================================
 Tools required: HiFrog, OpenSMT, z3
 
-HiFrog Version (Recent): https://scm.ti-edu.ch/projects/hifrog/repository?utf8=%E2%9C%93&rev=latticeref-v2-trigo 
-
 HiFrog Version (for VSTTE 2018): https://scm.ti-edu.ch/projects/hifrog/repository?utf8=%E2%9C%93&rev=latticeref-v1-mod 
 
 Original results: https://drive.google.com/drive/folders/1WjX8FKcLqg1apNxrHZzHxXWIKo7z9ZLI
+
+Technical information: https://docs.google.com/document/d/1T19_XhHsbzaYJEWIqs-3ZAY_kfaMlQAUJtecDoHOE6U/edit?usp=sharing 
 
 Additional information: http://verify.inf.usi.ch/content/lattice-refinement 
 
@@ -25,6 +26,8 @@ HiFrog Version: https://scm.ti-edu.ch/projects/hifrog/repository?utf8=%E2%9C%93&
 
 Original results: https://drive.google.com/open?id=1DMBgkJEOmxYlxVAsUlxUsHedhKH-6ly2 
 
+Technical information: https://docs.google.com/document/d/1fXPdNhqfgnHOx1eg4zjEyXKuWS-D0EsXcoB0fM5XpDc/edit?usp=sharing 
+
 Additional information and evaluation: https://drive.google.com/drive/folders/1QthdYYhUBNJMfJ6CNcrJZ_M03BWWIp-c?usp=sharing 
 
 
@@ -35,11 +38,15 @@ All data and benchmarks are available in our git repository:
 https://scm.ti-edu.ch/projects/hi-bench/repository/revisions/master/show/main-bench/lattice_summaries/trigonometric_ex
 
 In addition, we put a copy of these files in Google Drive:
-All the lattices and the summaries are found in the following zip file: 
-https://drive.google.com/open?id=1_lPLkBwPn4nJvdBpL9QZvLHDpX6LyfCy.
-All the benchmarks are found: https://drive.google.com/open?id=1q-Bh_jtTZI5GT7AIWgdI-MoPuedPut84.
+https://drive.google.com/drive/folders/1QthdYYhUBNJMfJ6CNcrJZ_M03BWWIp-c?usp=sharing 
 
-We aware of some issues with the zip file of all our experimental results. In case you experience any, you can either access the folder in Google drive: https://drive.google.com/drive/folders/18hQMN_jvOxdCGWM5Bj8iqHqPY8brFgeK?usp=sharing or email us: karine.even_mendoza@kcl.ac.uk and we can send any of the files, unzipped.
+All the lattices and the summaries are found in the following zip file: 
+https://drive.google.com/file/d/1c2SXVoh1kQfuZlFZ7R1xE5GqrLIKE9Ex/view?usp=sharing 
+
+All the benchmarks are found: 
+https://drive.google.com/file/d/1XKcm590K6sUXzZVnoicyAdEprEFg2Tou/view?usp=sharing 
+
+We aware of some issues with the zip file of all our experimental results. In case you experience any problems, you can either access the folder in Google drive: https://drive.google.com/drive/folders/18hQMN_jvOxdCGWM5Bj8iqHqPY8brFgeK?usp=sharing or email us: karine.even_mendoza@kcl.ac.uk and we can send any of the files, unzipped.
 
 
 How to Run the Code
