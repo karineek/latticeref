@@ -7,6 +7,8 @@ Lattice-based refinement for modulo function:
 =============================================
 Tools required: HiFrog, OpenSMT, z3
 
+HiFrog Version (Recent): https://scm.ti-edu.ch/projects/hifrog/repository?utf8=%E2%9C%93&rev=latticeref-v2-trigo 
+
 HiFrog Version (for VSTTE 2018): https://scm.ti-edu.ch/projects/hifrog/repository?utf8=%E2%9C%93&rev=latticeref-v1-mod 
 
 Original results: https://drive.google.com/drive/folders/1WjX8FKcLqg1apNxrHZzHxXWIKo7z9ZLI
@@ -20,6 +22,8 @@ Lattice-based refinement for trigonometric functions:
 Tools required: HiFrog, OpenSMT, z3
 
 HiFrog Version: https://scm.ti-edu.ch/projects/hifrog/repository?utf8=%E2%9C%93&rev=latticeref-v2-trigo 
+
+Original results: https://drive.google.com/open?id=1DMBgkJEOmxYlxVAsUlxUsHedhKH-6ly2 
 
 Additional information and evaluation: https://drive.google.com/drive/folders/1QthdYYhUBNJMfJ6CNcrJZ_M03BWWIp-c?usp=sharing 
 
