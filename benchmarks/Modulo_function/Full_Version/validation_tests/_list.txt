@@ -1,0 +1,101 @@
+VALIDATION TESTS FOR:
+z_mod_0_l
+z_mod_0_r
+z_mod_1_l	
+z_mod_1_r	
+z_mod_eq	
+z_mod_eq_full
+z_mod_le	
+z_mod_mod	
+z_mod_mult	
+z_mod_neg_bound
+z_mod_nz_opp_full	
+z_mod_nz_opp_r	
+z_mod_opp_opp
+z_mod_pos_bound	
+z_mod_remainder	
+z_mod_same_full
+z_mod_small		
+z_mod_zero_opp_full	
+z_mod_zero_opp_r
+z_mod_unique_full
+z_mod_unique
+z_mod_2_r
+z_mod_2_r_full
+z_mod_plus
+z_mod_plus_full
+z_div_exact_full_1
+z_div_zero_opp_full
+z_div_zero_opp_r
+z_div_nz_opp_full
+z_div_nz_opp_r
+z_wiki_opp_plus
+
+
+# with definition:
+https://scm.ti-edu.ch/projects/verify-lattice-ref/repository/entry/text_data_files/Stage_1/Coq_translate_wt_implies_Z3.txt
+
+z_mod_neg_bound		//  b < 0 -> b < a mod b <= 0
+
+z_mod_pos_bound		// 0 < b -> 0 <= a mod b < b
+
+z_mod_same_full		//forall a, a mod a = 0
+
+z_mod_0_l		// forall a, 0 mod a = 0
+
+z_mod_0_r		//forall a, a mod 0 = 0
+
+z_mod_1_l		//forall a, 1 < a -> 1 mod a = 1
+
+z_mod_1_r		//a mod 1 = 0
+
+z_mod_eq    	        // b>0 -> a mod b = a - (a/b)*b
+	
+z_mod_eq_full  		// a b : b<>0 -> a mod b = a - (a/b)*b
+
+z_mod_le		//forall a b, 0 < b && 0 <= a -> a mod b <= a.
+
+z_mod_mod		//forall a n, (a mod n) mod n = a mod n
+
+z_mod_mult		//forall a b, (a*b) mod b = 0
+
+z_mod_nz_opp_full	//forall a b:Z, a mod b <> 0 -> (-a) mod b = b - (a mod b)
+
+z_mod_nz_opp_r	        //forall a b:Z, a mod b <> 0 -> a mod (-b) = (a mod b) - b
+
+z_mod_opp_opp           //forall a b:Z, (-a) mod (-b) = - (a mod b)
+
+z_mod_remainder	        //b<>0 -> Remainder (a mod b) b
+
+z_mod_small		//forall a n, 0 <= a < n -> a mod n = a
+
+z_mod_unique		//forall a b q r, 0 <= r < b -> a = b*q + r -> r = a mod b
+
+z_mod_unique_full	//forall a b q r, Remainder r b -> a = b*q + r -> r = a mod b
+
+z_mod_zero_opp_full	//forall a b:Z, a mod b = 0 -> (-a) mod b = 0
+
+z_mod_zero_opp_r	//forall a b:Z, a mod b = 0 -> a mod (-b) = 0
+
+///////// New ////////////
+
+z_mod_2_r 		// 0 <= a -> a mod 2 = 0 || a mod 2 = 1 
+
+z_mod_2_r_full		// a mod 2 = 0 || a mod 2 = 1 
+
+z_mod_plus		// forall a b c:Z, c > 0 -> (a + b * c) mod c = a mod c.
+
+z_mod_plus_full		// forall a b c:Z, (a + b * c) mod c = a mod c.
+
+z_div_exact_full_1	// forall a b:Z, a = b*(a/b) -> a mod b = 0.
+
+z_div_zero_opp_full	// forall a b:Z, a mod b = 0 -> (-a)/b = -(a/b).
+
+z_div_zero_opp_r	// forall a b:Z, a mod b = 0 -> a/(-b) = -(a/b).
+
+z_div_nz_opp_full	// forall a b:Z, a mod b <> 0 -> (-a)/b = -(a/b)-1. - only under mod!
+
+z_div_nz_opp_r		// forall a b:Z, a mod b <> 0 -> a/(-b) = -(a/b)-1. - only under mod!
+
+z_wiki_opp_plus		// WIKI: [(-a mod n) + (a mod n)] mod n = 0
+
