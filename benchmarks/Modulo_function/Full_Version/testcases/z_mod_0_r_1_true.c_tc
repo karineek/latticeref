@@ -1,8 +1,0 @@
-Asucc.c_out,tests/z_mod_0_r_1_true.c,qflra,--claim,1,--solver,osmt,--no-itp,--no-error-trace
-Asucc.c_out,tests/z_mod_0_r_1_true.c,qflia,--claim,1,--solver,osmt,--no-itp,--no-error-trace
-Asucc.c_out,tests/z_mod_0_r_1_true.c,qfuf,--claim,1,--solver,osmt,--no-itp,--no-error-trace
-Asucc.c_out,tests/z_mod_0_r_1_true.c,prop,--claim,1,--solver,osmt,--no-itp,--no-error-trace
-Asucc.c_out,tests_summeries/z_mod_0_r_1_true.c,qfuf,--claim,1,--solver,osmt,--no-itp,--no-error-trace,--load-summaries,../model/main_model/__summaries_z_mod_uf
-Asucc.c_out,tests_summeries/z_mod_0_r_1_true.c,qflra,--claim,1,--solver,z3,--no-itp,--no-error-trace,--load-summaries,../model/main_model/__summaries_z_mod_lra
-Asucc.c_out,tests_summeries/z_mod_0_r_1_true.c,qflia,--claim,1,--solver,z3,--no-itp,--no-error-trace,--load-summaries,../model/main_model/__summaries_z_mod_lia
-Asucc.c_out,tests_summeries/z_mod_0_r_1_true.c,qfcuf,--claim,1,--solver,osmt,--theoref,--bitwidth,32,--no-itp,--no-error-trace

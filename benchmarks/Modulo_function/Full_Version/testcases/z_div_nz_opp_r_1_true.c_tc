@@ -1,8 +1,0 @@
-Asucc.c_out,tests/z_div_nz_opp_r_1_true.c,qflra,--claim,1,--solver,osmt,--no-itp,--no-error-trace
-Asucc.c_out,tests/z_div_nz_opp_r_1_true.c,qflia,--claim,1,--solver,osmt,--no-itp,--no-error-trace
-Asucc.c_out,tests/z_div_nz_opp_r_1_true.c,qfuf,--claim,1,--solver,osmt,--no-itp,--no-error-trace
-Asucc.c_out,tests/z_div_nz_opp_r_1_true.c,prop,--claim,1,--solver,osmt,--no-itp,--no-error-trace
-Asucc.c_out,tests_summeries/z_div_nz_opp_r_1_true.c,qfuf,--claim,1,--solver,osmt,--no-itp,--no-error-trace,--load-summaries,../model/main_model/__summaries_z_mod_uf,--load-sum-model,../model/main_model/z_mod_lattice_flat_31
-Asucc.c_out,tests_summeries/z_div_nz_opp_r_1_true.c,qflra,--claim,1,--solver,z3,--no-itp,--no-error-trace,--load-summaries,../model/main_model/__summaries_z_mod_lra,--load-sum-model,../model/main_model/z_mod_lattice_flat_31
-Asucc.c_out,tests_summeries/z_div_nz_opp_r_1_true.c,qflia,--claim,1,--solver,z3,--no-itp,--no-error-trace,--load-summaries,../model/main_model/__summaries_z_mod_lia,--load-sum-model,../model/main_model/z_mod_lattice_lia_flat_31
-Asucc.c_out,tests_summeries/z_div_nz_opp_r_1_true.c,qfcuf,--claim,1,--solver,osmt,--theoref,--bitwidth,32,--no-itp,--no-error-trace
