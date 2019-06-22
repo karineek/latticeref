@@ -3,6 +3,9 @@ Lattice Refinement Algorithms and Benchmarks
 
 HiFrog Version (Recent): https://scm.ti-edu.ch/projects/hifrog/repository?utf8=%E2%9C%93&rev=latticeref-v2-trigo 
 
+Homepage (Recent): http://verify.inf.usi.ch/content/trig_refinement
+
+
 
 Lattice-based refinement for modulo function:
 =============================================
