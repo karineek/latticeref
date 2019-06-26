@@ -21,7 +21,7 @@ Additional information: http://verify.inf.usi.ch/content/lattice-refinement
 
 
 
-Lattice-based refinement for trigonometric functions:
+LB-CEGAR for trigonometric functions:
 =====================================================
 Tools required: HiFrog, OpenSMT, z3
 
