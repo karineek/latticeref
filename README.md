@@ -36,10 +36,10 @@ Additional information and evaluation: https://drive.google.com/drive/folders/1Q
 General options for LB-CEGAR in HiFrog:
 1. --no-cex: disable the heuristic on the choice of the successor in the sub-procedure traverseSAT(Lattices) is done based on the current spurious counterexample CE
 2. --heuristic <n>: the refinement order and schema as described in SAT17' paper (Theory refinement functionality)
-3. --load-summaries <file1,file2,...>: the names of the files where the summaries representing a guarded literals per lattice are
-4. --load-sum-model <file1,file2,...>: the names of the files of the lattices
-5. --solver <solver>: either osmt or z3
-6. --solving-mode <mode>: either no, semi or inc (or non-, semi- or full-incremental mode of solving)
+3. --load-summaries \<file1,file2,...\>: the names of the files where the summaries representing a guarded literals per lattice are
+4. --load-sum-model \<file1,file2,...\>: the names of the files of the lattices
+5. --solver \<solver\>: either osmt or z3
+6. --solving-mode \<mode\>: either no, semi or inc (or non-, semi- or full-incremental mode of solving)
 
 Data for Experiments
 --------------------
