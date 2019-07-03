@@ -1,13 +1,11 @@
-# latticeref
-Lattice Refinement Algorithms and Benchmarks
+# Lattice Refinement Algorithms and Benchmarks (latticeref)
 
-HiFrog Version (Recent): https://scm.ti-edu.ch/projects/hifrog/repository?utf8=%E2%9C%93&rev=latticeref-v2-trigo 
+HiFrog Version (Recent): https://scm.ti-edu.ch/projects/hifrog/repository?utf8=%E2%9C%93&rev=latticeref-v3-LBCEGAR 
 
 Homepage (Recent): http://verify.inf.usi.ch/content/trig_refinement
 
 
-
-Lattice-based refinement for modulo function:
+Lattice-based refinement for modulo function (2018):
 =============================================
 Tools required: HiFrog, OpenSMT, z3
 
@@ -20,8 +18,7 @@ Technical information: https://docs.google.com/document/d/1T19_XhHsbzaYJEWIqs-3Z
 Additional information: http://verify.inf.usi.ch/content/lattice-refinement 
 
 
-
-LB-CEGAR for trigonometric functions:
+LB-CEGAR for trigonometric functions (2019):
 =====================================================
 Tools required: HiFrog, OpenSMT, z3
 
