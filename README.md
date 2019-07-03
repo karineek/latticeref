@@ -6,7 +6,7 @@ Homepage (Recent): http://verify.inf.usi.ch/content/trig_refinement
 
 
 Lattice-based refinement for modulo function (2018):
-=============================================
+----------------------------------------------------
 Tools required: HiFrog, OpenSMT, z3
 
 HiFrog Version (for VSTTE 2018): https://scm.ti-edu.ch/projects/hifrog/repository?utf8=%E2%9C%93&rev=latticeref-v1-mod 
@@ -19,7 +19,7 @@ Additional information: http://verify.inf.usi.ch/content/lattice-refinement
 
 
 LB-CEGAR for trigonometric functions (2019):
-=====================================================
+--------------------------------------------
 Tools required: HiFrog, OpenSMT, z3
 
 HiFrog Version: https://scm.ti-edu.ch/projects/hifrog/repository?utf8=%E2%9C%93&rev=latticeref-v2-trigo 
@@ -40,7 +40,6 @@ General options for LB-CEGAR in HiFrog:
 
 Data for Experiments
 --------------------
-
 All data and benchmarks are available in our git repository:
 https://scm.ti-edu.ch/projects/hi-bench/repository/revisions/master/show/main-bench/lattice_summaries/trigonometric_ex
 
