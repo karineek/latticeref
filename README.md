@@ -2,7 +2,7 @@
 
 HiFrog Version (Recent): https://scm.ti-edu.ch/projects/hifrog/repository?utf8=%E2%9C%93&rev=latticeref-v3-LBCEGAR 
 
-Homepage (Recent): http://verify.inf.usi.ch/content/trig_refinement
+Homepage (Recent): http://verify.inf.usi.ch/content/lattice-reﬁnement/
 
 
 Lattice-based refinement for modulo function (2018):
